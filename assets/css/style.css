@@ -30,6 +30,13 @@ body {
 
 #game-area {
     height: 75vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#computer-area {
+    height: 150px;
+    display: flex;
 }
 
 #computer-turn {
@@ -37,6 +44,23 @@ body {
     height: 100px;
     width: 75px;
     margin: 25px auto;
+}
+
+.choice-cards {
+    height: 100px;
+    width: 80%;
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.card {
+    background-color: green;
+    height: 75px;
+    width: 40px;
+    display: inline-block;
 }
 
 /* Footer 
