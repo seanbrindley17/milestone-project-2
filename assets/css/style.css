@@ -32,6 +32,13 @@ body {
     height: 75vh;
 }
 
+#computer-turn {
+    background-color: #d32626;
+    height: 100px;
+    width: 75px;
+    margin: 25px auto;
+}
+
 /* Footer 
 ----------------------------------------------------------------------------- */
 
