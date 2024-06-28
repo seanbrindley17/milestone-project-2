@@ -62,6 +62,17 @@ body {
     display: inline-block;
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+#play-btn {
+    font-size: 1.5rem;
+    padding: 5px;
+    margin: 10px;
+}
+
 #score-area {
     background-color: yellow;
 }
