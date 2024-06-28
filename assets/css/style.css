@@ -75,11 +75,17 @@ body {
 
 #score-area {
     background-color: yellow;
+    display: flex;
+    justify-content: space-between;
 }
 
-#score-area h3 {
+.score {
     text-align: end;
     padding-right: 10%;
+}
+
+.hi-score {
+    padding-left: 5%;
 }
 
 /* Footer 
