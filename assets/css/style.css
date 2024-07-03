@@ -1,3 +1,6 @@
+/* General
+----------------------------------------------------------------------------- */
+
 * {
     padding: 0;
     border: 0;
@@ -9,6 +12,10 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+}
+
+.hide-content {
+    display: none;
 }
 
 /* Navigation 
@@ -31,7 +38,7 @@ body {
 /* Play Button
 ----------------------------------------------------------------------------- */
 
-.container {
+#btn-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,7 +55,6 @@ body {
 
 #game-area {
     height: 75vh;
-    display: none;
     flex-direction: column;
 }
 
