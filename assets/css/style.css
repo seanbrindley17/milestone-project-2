@@ -6,6 +6,9 @@
 
 body {
     background-color: black;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Navigation 
@@ -25,12 +28,27 @@ body {
     margin: 10px;
 }
 
+/* Play Button
+----------------------------------------------------------------------------- */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30vh;
+}
+
+#play-btn {
+    font-size: 4rem;
+    padding: 10px;
+}
+
 /* Game Area
 ----------------------------------------------------------------------------- */
 
 #game-area {
     height: 75vh;
-    display: flex;
+    display: none;
     flex-direction: column;
 }
 
@@ -60,17 +78,6 @@ body {
     height: 75px;
     width: 40px;
     display: inline-block;
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-}
-
-#play-btn {
-    font-size: 1.5rem;
-    padding: 5px;
-    margin: 10px;
 }
 
 #score-area {
