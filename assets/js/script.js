@@ -6,7 +6,7 @@ const game = {
     playerFlip: [],
 }
 
-const cardArray = ["button1", "button2", "button3", "button4", "button5", "button6", "button7", "button8", "button9", "button10", "button11", "button12"]
+const cards = document.querySelectorAll(".card")
 
 // Brings up the game area and hides the play button upon clicking, then starts the game
 function playButton() {
