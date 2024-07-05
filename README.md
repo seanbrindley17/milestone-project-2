@@ -23,3 +23,9 @@
 Wireframes were created on balsamiq for mobile, tablet and desktop displays.
 
 ![main wireframe](/readme%20documentations/wireframes/main%20wireframe%20v2.png)
+
+## Credits
+
+### Code Used From Outside Sources
+
+* I used code from [this Reddit thread](https://www.reddit.com/r/learnjavascript/comments/jkv7lo/put_div_elements_in_array/) to help me when I was initially struggling to iterate through my cards. 
