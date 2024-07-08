@@ -84,6 +84,7 @@ body {
     height: 75px;
     width: 40px;
     display: inline-block;
+    cursor: pointer;
 }
 
 #score-area {
