@@ -26,6 +26,10 @@ Wireframes were created on balsamiq for mobile, tablet and desktop displays.
 
 ## Credits
 
+* Finding [this page](https://www.w3schools.com/jsref/dom_obj_html_nodelist.asp) on W3 Schools that informed me that a nodelist is not an array.
+
 ### Code Used From Outside Sources
 
 * I used code from [this Reddit thread](https://www.reddit.com/r/learnjavascript/comments/jkv7lo/put_div_elements_in_array/) to help me when I was initially struggling to iterate through my cards. 
+
+* I used code from [this StackOverflow question](https://stackoverflow.com/questions/29116240/create-an-array-from-ids-from-divs) to help me get my card IDs into an array.
