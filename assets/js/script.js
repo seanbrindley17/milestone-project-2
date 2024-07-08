@@ -4,11 +4,20 @@ const game = {
     computerCardSelection: [],
     turnInProgress: false,
     playerFlip: [],
+    turnNumber: 0,
 }
 
 
-// an array of the choice cards 
-const cards = document.querySelectorAll(".card");
+// a nodelist of the choice cards 
+// const cards = document.querySelectorAll(".card");
+
+
+const cards = [];
+$(".card").each(function () {
+    cards.push(this.id);
+});
+console.log(cards);
+
 
 // Brings up the game area and hides the play button upon clicking, then starts the game
 function playButton() {
@@ -29,8 +38,7 @@ function startGame() {
 
 function computerTurn() {
     game.turnInProgress = true
-    randomCardSelect(cards);
-    cardFlip();
+    game.computerCardSelection.push(randomCardSelect(cards));
 }
 
 function playerTurn() {
@@ -49,8 +57,8 @@ function cardFlip() {
 
 }
 
-function randomCardSelect(cards) {
-    const randomCardIndex = Math.floor(Math.random() * cards.length);
-    const randomCardElement = cards[randomCardIndex];
-    return randomCardElement;
-}
+// function randomCardSelect(cards) {
+//     const randomCardIndex = Math.floor(Math.random() * cards.length);
+//     const randomCardElement = cards[randomCardIndex];
+//     return randomCardElement;
+// }
