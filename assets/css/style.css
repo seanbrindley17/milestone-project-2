@@ -65,6 +65,7 @@ body {
 
 #computer-turn {
     background-color: #d32626;
+    opacity: 50%;
     height: 100px;
     width: 75px;
     margin: 25px auto;
@@ -93,12 +94,12 @@ body {
     justify-content: space-between;
 }
 
-.score {
+#score {
     text-align: end;
     padding-right: 10%;
 }
 
-.hi-score {
+#hi-score {
     padding-left: 5%;
 }
 

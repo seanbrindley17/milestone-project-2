@@ -1,3 +1,4 @@
+
 const game = {
     score: 0,
     hiscore: '',
@@ -30,9 +31,10 @@ function startGame() {
 }
 
 function computerTurn() {
-    playerFlip = [],
-    game.turnInProgress = true
-    game.computerCardSelection.push(cards)
+    playerFlip = [];
+    const randomSelect = randomCardSelect();
+    game.computerCardSelection.push(randomSelect);
+    cardFlip();
 }
 
 function playerTurn() {
@@ -48,6 +50,12 @@ function highScore() {
 }
 
 function cardFlip() {
+    game.turnInProgress = true;
+    const lastItem = game.computerCardSelection.slice(-1);
+    console.log(lastItem);
+    setTimeout(() => {
+    document.getElementById("computer-area");
+    }, 800);
 
 }
 
