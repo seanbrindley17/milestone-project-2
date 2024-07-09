@@ -30,6 +30,8 @@ Wireframes were created on balsamiq for mobile, tablet and desktop displays.
 
 ### Code Used From Outside Sources
 
-* I used code from [this Reddit thread](https://www.reddit.com/r/learnjavascript/comments/jkv7lo/put_div_elements_in_array/) to help me when I was initially struggling to iterate through my cards. 
+* I initially used code from [this Reddit thread](https://www.reddit.com/r/learnjavascript/comments/jkv7lo/put_div_elements_in_array/) to help me when I was initially struggling to iterate through my cards. But changed it later.
 
 * I used code from [this StackOverflow question](https://stackoverflow.com/questions/29116240/create-an-array-from-ids-from-divs) to help me get my card IDs into an array.
+
+* I used code from [this video](https://www.youtube.com/watch?v=W0MxUHlZo6U&t=1450s) by Web Dev Cody to help with getting random IDs.
