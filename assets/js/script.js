@@ -34,7 +34,7 @@ function computerTurn() {
     playerFlip = [];
     const randomSelect = randomCardSelect();
     game.computerCardSelection.push(randomSelect);
-    cardFlip();
+    cardHighlight();
 }
 
 function playerTurn() {
@@ -49,20 +49,21 @@ function highScore() {
 
 }
 
-function cardFlip() {
+function cardHighlight() {
     game.turnInProgress = true;
-    const lastItem = game.computerCardSelection.slice(-1);
+    const lastItem = game.computerCardSelection.slice(-1)[0];
     console.log(lastItem);
+    
+    lastItem.classList.add("card-highlight");
     setTimeout(() => {
-    document.getElementById("computer-area");
+        lastItem.classList.remove("card-highlight");
     }, 800);
-
 }
 
 function randomCardSelect() {
     const cards = [];
     $(".card").each(function () {
-        cards.push(this.id);
+        cards.push(this);
     });
     return cards[parseInt(Math.random() * cards.length)];
 }
