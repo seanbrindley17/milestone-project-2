@@ -42,31 +42,35 @@ function computerTurn() {
 
 
 function playerTurn() {
-    for (let card of document.getElementsByClassName("card")) {
+    const cards = document.getElementsByClassName("card");
+    console.log("playerTurn called, number of cards: ", cards.length);
+    
+    for (let card of cards) {
+        console.log("Adding event listener to card: ", card);
+        
         card.addEventListener("click", (event) => {
+            console.log("Card clicked: ", event.currentTarget);
+            
             if (game.computerCardSelection > 0) {
-                let playerChoice = event.target;
-                console.log("card clicked: ${playerChoice}");
+                let playerChoice = event.currentTarget;
                 game.playerFlip.push(playerChoice);
-                console.log(game.playerFlip);
-
-                if (game.playerFlip.length === game.computerCardSelection.length) {
-                    let correct = game.playerFlip.every((card, index) => {
-                        console.log("compare player card ${card} with computer ${game.computerCardSelection[index]}");
-                        return card === game.computerCardSelection[index];
-                    });
-                    if (correct) {
-                        console.log("Success!");
-                        game.score++;
-                        computerTurn();
-                    } else {
-                        console.log("game over");
-                    };
-                };  
-            };
+                console.log("playerFlip array: ", game.playerFlip);
+            }
         });
-    };
-};
+        if (game.playerFlip.length === game.computerCardSelection.length) {
+            let correct = game.playerFlip.every((card, index) => {
+                return card === game.computerCardSelection[index];
+            });
+            if (correct) {
+                console.log("Success!");
+            } else {
+                console.log("game over");
+            };
+        };
+    }
+}
+
+
 
 function showScore() {
 
@@ -77,7 +81,7 @@ function highScore() {
 }
 
 function gameOver () {
-    
+
 }
 
 function cardHighlight() {
