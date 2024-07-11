@@ -24,6 +24,7 @@ function playButton() {
     startGame();
 }
 
+// Sets the score to 0, empties the computer's and player's arrays and calls the computer to have it's turn.
 function startGame() {
     game.score = 0;
     game.computerCardSelection = [];
@@ -32,6 +33,7 @@ function startGame() {
     showScore();
 }
 
+// Clears the player's array in preparation for another guess. Selects a random card and pushes it to computer's array
 function computerTurn() {
     game.playerFlip = [];
     const randomSelect = randomCardSelect();
@@ -40,17 +42,14 @@ function computerTurn() {
     playerTurn();
 }
 
-
+/* Listens for the player's click and pushes the card to the player's array.
+*  Currently not working as the arrays will never match due to the class added in the highlight function
+*  to the computer array.
+*/
 function playerTurn() {
     const cards = document.getElementsByClassName("card");
-    console.log("playerTurn called, number of cards: ", cards.length);
-    
     for (let card of cards) {
-        console.log("Adding event listener to card: ", card);
-        
         card.addEventListener("click", (event) => {
-            console.log("Card clicked: ", event.currentTarget);
-            
             if (game.computerCardSelection > 0) {
                 let playerChoice = event.currentTarget;
                 game.playerFlip.push(playerChoice);
@@ -84,6 +83,7 @@ function gameOver () {
 
 }
 
+// Highlights last card the computer selected
 function cardHighlight() {
     game.turnInProgress = true;
     const lastItem = game.computerCardSelection.slice(-1)[0];
@@ -95,6 +95,7 @@ function cardHighlight() {
     }, 800);
 }
 
+// Function to get all the card elements into an array and have the computer pick one randomly
 function randomCardSelect() {
     const cards = [];
     $(".card").each(function () {
