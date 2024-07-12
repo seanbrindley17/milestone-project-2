@@ -46,10 +46,10 @@ function computerTurn() {
     playerTurn();
 }
 
-/* Listens for the player's click and pushes the card to the player's array.
-*  Currently not working as the arrays will never match due to the class added in the highlight function
-*  to the computer array.
-*/
+/* Listens for the player's click and pushes the card's ID to the player's array.
+*  Checks that the computer's and player's arrays are the same length
+*  Uses a for loop to iterate through the two array and check that the indexes of the playerFlip and computerCardId match 
+*/ 
 function playerTurn() {
     const cards = document.getElementsByClassName("card");
     for (let card of cards) {
