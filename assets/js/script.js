@@ -4,6 +4,7 @@ const game = {
     score: 0,
     hiscore: '',
     computerCardSelection: [],
+    computerCardId: [],
     turnInProgress: false,
     playerFlip: [],
     turnNumber: 0,
@@ -39,6 +40,9 @@ function computerTurn() {
     const randomSelect = randomCardSelect();
     game.computerCardSelection.push(randomSelect);
     cardHighlight();
+    game.computerCardId.push(randomSelect.id);
+    console.log(game.computerCardSelection, "computer card actual div");
+    console.log(game.computerCardId, "computer card button id");
     playerTurn();
 }
 
@@ -50,16 +54,16 @@ function playerTurn() {
     const cards = document.getElementsByClassName("card");
     for (let card of cards) {
         card.addEventListener("click", (event) => {
-            if (game.computerCardSelection > 0) {
+            if (game.computerCardSelection.length > 0) {
                 let playerChoice = event.currentTarget;
-                game.playerFlip.push(playerChoice);
-                console.log("playerFlip array: ", game.playerFlip);
+                game.playerFlip.push(playerChoice.id);
             }
+            console.log(game.playerFlip, "player choice button id");
         });
         if (game.playerFlip.length === game.computerCardSelection.length) {
-            let correct = game.playerFlip.every((card, index) => {
-                return card === game.computerCardSelection[index];
-            });
+            if (game.playerFlip === game.computerCardId) {
+                return correct
+            }
             if (correct) {
                 console.log("Success!");
             } else {
@@ -68,6 +72,7 @@ function playerTurn() {
         };
     }
 }
+
 
 
 
