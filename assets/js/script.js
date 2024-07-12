@@ -59,18 +59,20 @@ function playerTurn() {
                 game.playerFlip.push(playerChoice.id);
             }
             console.log(game.playerFlip, "player choice button id");
-        });
-        if (game.playerFlip.length === game.computerCardSelection.length) {
-            if (game.playerFlip === game.computerCardId) {
-                return correct
-            }
-            if (correct) {
-                console.log("Success!");
-            } else {
-                console.log("game over");
+
+            if (game.playerFlip.length === game.computerCardSelection.length) {
+                for (let i = 0; i < game.computerCardId.length; i++) {
+                    if (game.playerFlip[i] !== game.computerCardId[i]) {
+                        console.log("gameover");
+                        gameOver();
+                    } else {
+                        console.log("Correct");
+                        success();
+                    };
+                };
             };
-        };
-    }
+        });
+    };
 }
 
 
@@ -85,6 +87,10 @@ function highScore() {
 }
 
 function gameOver () {
+
+}
+
+function success() {
 
 }
 
