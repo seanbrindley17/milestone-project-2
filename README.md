@@ -35,3 +35,5 @@ Wireframes were created on balsamiq for mobile, tablet and desktop displays.
 * I used code from [this StackOverflow question](https://stackoverflow.com/questions/29116240/create-an-array-from-ids-from-divs) to help me get my card IDs into an array.
 
 * I used code from [this video](https://www.youtube.com/watch?v=W0MxUHlZo6U&t=1450s) by Web Dev Cody to help with getting random IDs.
+
+* I used code from [Geeks for Geeks (Method 2)](https://www.geeksforgeeks.org/how-to-compare-two-arrays-in-javascript/) for having precisely what I needed to help me write some simple array comparing code.
