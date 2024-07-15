@@ -76,10 +76,8 @@ function playerTurn() {
 }
 
 
-
-
 function showScore() {
-
+    document.getElementById("score-number").innerText = game.score;
 }
 
 function highScore() {
