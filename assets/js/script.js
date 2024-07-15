@@ -89,7 +89,8 @@ function gameOver () {
 }
 
 function success() {
-
+    game.score++;
+    showScore();
 }
 
 // Highlights last card the computer selected
