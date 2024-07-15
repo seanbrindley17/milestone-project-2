@@ -38,14 +38,29 @@ function startGame() {
 function computerTurn() {
     game.playerFlip = [];
     game.turnNumber++;
-    console.log(game.turnNumber);
+    console.log(game.turnNumber, "Turn number");
     const randomSelect = randomCardSelect();
     game.computerCardSelection.push(randomSelect);
     cardHighlight();
     game.computerCardId.push(randomSelect.id);
     console.log(game.computerCardSelection, "computer card actual div");
     console.log(game.computerCardId, "computer card button id");
-    playerTurn();
+    playComputerSequence();
+    // playerTurn();
+}
+
+function playComputerSequence() {
+    let i = 0;
+    const sequence = setInterval(() => {
+        if (i < game.computerCardSelection.length) {
+            cardHighlight(game.computerCardSelection[i]);
+            i++;
+        } else {
+            clearInterval(sequence);
+            game.turnInProgress = false;
+            playerTurn();
+        }
+    }, 750);
 }
 
 /* Listens for the player's click and pushes the card's ID to the player's array.
