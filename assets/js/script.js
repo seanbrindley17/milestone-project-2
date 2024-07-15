@@ -37,6 +37,8 @@ function startGame() {
 // Clears the player's array in preparation for another guess. Selects a random card and pushes it to computer's array
 function computerTurn() {
     game.playerFlip = [];
+    game.turnNumber++;
+    console.log(game.turnNumber);
     const randomSelect = randomCardSelect();
     game.computerCardSelection.push(randomSelect);
     cardHighlight();
@@ -91,6 +93,7 @@ function gameOver () {
 function success() {
     game.score++;
     showScore();
+    computerTurn();
 }
 
 // Highlights last card the computer selected
