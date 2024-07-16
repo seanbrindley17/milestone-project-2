@@ -11,11 +11,6 @@ const game = {
 }
 
 
-
-// a nodelist of the choice cards 
-// const cards = document.querySelectorAll(".card");
-
-
 // Brings up the game area and hides the play button upon clicking, then starts the game
 function playButton() {
     document.getElementById("game-area").classList.remove("hide-content");
@@ -47,25 +42,20 @@ function computerTurn() {
     console.log(game.computerCardSelection, "computer card actual div");
     console.log(game.computerCardId, "computer card button id");
     playSequence();
-    // playComputerSequence();
-    // playerTurn();
 }
 
+// Function that iterates through the computerCardSelection array and highlights the divs sequentially
 function playSequence() {
     let i = 0;
     const sequence = setInterval(() => {
         if (i < game.computerCardSelection.length) {
             const card = game.computerCardSelection[i];
-            console.log(card, `Highlighting card at index ${i}`);
             if (card) {
                 cardHighlight(card);
-            } else {
-                console.error(`No card found at index ${i}`);
             }
             i++;
         } else {
             clearInterval(sequence);
-            // playerTurn();
         }
     }, 750);
 }
@@ -129,18 +119,6 @@ function cardHighlight(card) {
         card.classList.remove("card-highlight");
     }, 800);
 }
-
-// Highlights last card the computer selected
-// function lastCardHighlight() {
-//     game.turnInProgress = true;
-//     const lastItem = game.computerCardSelection.slice(-1)[0];
-//     console.log(lastItem);
-    
-//     lastItem.classList.add("card-highlight");
-//     setTimeout(() => {
-//         lastItem.classList.remove("card-highlight");
-//     }, 800);
-// }
 
 // Function to get all the card elements into an array and have the computer pick one randomly
 function randomCardSelect() {
