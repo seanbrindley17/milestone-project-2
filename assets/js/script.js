@@ -30,6 +30,7 @@ function startGame() {
     game.score = 0;
     game.computerCardSelection = [];
     game.playerFlip = [];
+    cardEventListeners();
     computerTurn();
     showScore();
 }
@@ -64,53 +65,44 @@ function playSequence() {
             i++;
         } else {
             clearInterval(sequence);
-            playerTurn();
+            // playerTurn();
         }
     }, 750);
 }
 
-// function playComputerSequence() {
-//     let i = 0;
-//     const sequence = setInterval(() => {
-//         if (i < game.computerCardSelection.length) {
-//             cardHighlight(game.computerCardSelection[i]);
-//             i++;
-//         } else {
-//             clearInterval(sequence);
-//             game.turnInProgress = false;
-//             playerTurn();
-//         }
-//     }, 750);
-// }
 
 /* Listens for the player's click and pushes the card's ID to the player's array.
-*  Checks that the computer's and player's arrays are the same length
-*  Uses a for loop to iterate through the two array and check that the indexes of the playerFlip and computerCardId match 
+*  Checks that the computer's and player's arrays are the same length and calls compareChoice function
 */ 
-function playerTurn() {
+function cardEventListeners() {
     const cards = document.getElementsByClassName("card");
     for (let card of cards) {
         card.addEventListener("click", (event) => {
-            if (game.computerCardSelection.length > 0) {
+            if (!game.turnInProgress && game.computerCardSelection.length > 0) {
                 let playerChoice = event.currentTarget;
                 game.playerFlip.push(playerChoice.id);
-            }
-            console.log(game.playerFlip, "player choice button id");
-
-            if (game.playerFlip.length === game.computerCardSelection.length) {
-                for (let i = 0; i < game.computerCardId.length; i++) {
-                    if (game.playerFlip[i] !== game.computerCardId[i]) {
-                        console.log("gameover");
-                        return gameOver();
-                    } else {
-                        console.log("Correct");
-                        return success();
-                    };
+                console.log(game.playerFlip, "player choice button id");
+                
+                if (game.playerFlip.length === game.computerCardSelection.length) {
+                    compareChoice();
                 };
             };
-        }, {once : true});
+        });
     };
 }
+
+// Uses a for loop to iterate through the playerFlip and computerCardId arrays and checks that the indexes are the same
+function compareChoice() {
+    for (let i = 0; i < game.computerCardId.length; i++) {
+        if (game.playerFlip[i] !== game.computerCardId[i]) {
+            console.log("gameover");
+            return gameOver();
+        }
+    }
+    console.log("Correct");
+    success();
+}
+
 
 
 function showScore() {
