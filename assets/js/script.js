@@ -41,27 +41,47 @@ function computerTurn() {
     console.log(game.turnNumber, "Turn number");
     const randomSelect = randomCardSelect();
     game.computerCardSelection.push(randomSelect);
-    cardHighlight();
+
     game.computerCardId.push(randomSelect.id);
     console.log(game.computerCardSelection, "computer card actual div");
     console.log(game.computerCardId, "computer card button id");
-    playComputerSequence();
+    playSequence();
+    // playComputerSequence();
     // playerTurn();
 }
 
-function playComputerSequence() {
+function playSequence() {
     let i = 0;
     const sequence = setInterval(() => {
         if (i < game.computerCardSelection.length) {
-            cardHighlight(game.computerCardSelection[i]);
+            const card = game.computerCardSelection[i];
+            console.log(card, `Highlighting card at index ${i}`);
+            if (card) {
+                cardHighlight(card);
+            } else {
+                console.error(`No card found at index ${i}`);
+            }
             i++;
         } else {
             clearInterval(sequence);
-            game.turnInProgress = false;
             playerTurn();
         }
     }, 750);
 }
+
+// function playComputerSequence() {
+//     let i = 0;
+//     const sequence = setInterval(() => {
+//         if (i < game.computerCardSelection.length) {
+//             cardHighlight(game.computerCardSelection[i]);
+//             i++;
+//         } else {
+//             clearInterval(sequence);
+//             game.turnInProgress = false;
+//             playerTurn();
+//         }
+//     }, 750);
+// }
 
 /* Listens for the player's click and pushes the card's ID to the player's array.
 *  Checks that the computer's and player's arrays are the same length
@@ -81,14 +101,14 @@ function playerTurn() {
                 for (let i = 0; i < game.computerCardId.length; i++) {
                     if (game.playerFlip[i] !== game.computerCardId[i]) {
                         console.log("gameover");
-                        gameOver();
+                        return gameOver();
                     } else {
                         console.log("Correct");
-                        success();
+                        return success();
                     };
                 };
             };
-        });
+        }, {once : true});
     };
 }
 
@@ -111,17 +131,24 @@ function success() {
     computerTurn();
 }
 
-// Highlights last card the computer selected
-function cardHighlight() {
-    game.turnInProgress = true;
-    const lastItem = game.computerCardSelection.slice(-1)[0];
-    console.log(lastItem);
-    
-    lastItem.classList.add("card-highlight");
+function cardHighlight(card) {
+    card.classList.add("card-highlight");
     setTimeout(() => {
-        lastItem.classList.remove("card-highlight");
+        card.classList.remove("card-highlight");
     }, 800);
 }
+
+// Highlights last card the computer selected
+// function lastCardHighlight() {
+//     game.turnInProgress = true;
+//     const lastItem = game.computerCardSelection.slice(-1)[0];
+//     console.log(lastItem);
+    
+//     lastItem.classList.add("card-highlight");
+//     setTimeout(() => {
+//         lastItem.classList.remove("card-highlight");
+//     }, 800);
+// }
 
 // Function to get all the card elements into an array and have the computer pick one randomly
 function randomCardSelect() {
