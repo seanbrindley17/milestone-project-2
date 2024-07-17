@@ -16,8 +16,8 @@
         </nav>
     </header>
 
-    <div class="container hide-content" id="btn-container">
-        <button id="play-btn" class="hide-content" onclick="playButton()">PLAY</button>
+    <div class="container" id="btn-container">
+        <button id="play-btn" onclick="playButton()">PLAY</button>
     </div>
 
     <!-- Remember to put class = "hide-content" inside this game-area div -->
@@ -48,9 +48,13 @@
         </div>
     </div>
 
-    <div id="game-over-screen">
-        <h2 id="game-over-text">GAME OVER</h2>
-        <button id="try-again" onclick="playButton()"><h3>Try Again?</h3></button>
+    <!-- remember to add hide-content class to game over screen div for the finished game -->
+    <div id="game-over-screen" class="hide-content">
+        <div class="game-over-container">
+            <h2 id="game-over-text">GAME OVER</h2>
+            <h3>Your score was <span id="final-score">0</span></h3>
+            <button id="try-again" onclick="tryAgain()"><h3>Try Again?</h3></button>
+        </div>
     </div>
 
     <footer id="footer">

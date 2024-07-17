@@ -23,7 +23,9 @@ function playButton() {
 // Sets the score to 0, empties the computer's and player's arrays and calls the computer to have it's turn.
 function startGame() {
     game.score = 0;
+    game.turnNumber = 0;
     game.computerCardSelection = [];
+    game.computerCardId = [];
     game.playerFlip = [];
     cardEventListeners();
     computerTurn();
@@ -103,8 +105,25 @@ function highScore() {
 
 }
 
+ 
+
 function gameOver () {
     window.alert("Game over");
+    document.getElementById("game-area").classList.add("hide-content");
+    document.getElementById("game-over-screen").classList.remove("hide-content");
+    document.getElementById("final-score").innerText = game.score;
+}
+
+function tryAgain () {
+    document.getElementById("game-over-screen").classList.add("hide-content");
+    document.getElementById("game-area").classList.remove("hide-content");
+    game.score = 0;
+    game.turnNumber = 0;
+    game.computerCardSelection = [];
+    game.computerCardId = [];
+    game.playerFlip = [];
+    computerTurn();
+    showScore();
 }
 
 function success() {
