@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,12 +16,12 @@
         </nav>
     </header>
 
-    <div class="container" id="btn-container">
-        <button id="play-btn" onclick="playButton()">PLAY</button>
+    <div class="container hide-content" id="btn-container">
+        <button id="play-btn" class="hide-content" onclick="playButton()">PLAY</button>
     </div>
 
     <!-- Remember to put class = "hide-content" inside this game-area div -->
-    <div id="game-area">
+    <div id="game-area" class="hide-content">
         
         <div class="choice-cards upper-row">
             <div class="card card1" id="button1"><img src="assets/images/card images/number 1.png" alt="number one"></div>
@@ -45,6 +46,11 @@
             <h3 id="hi-score">HI-SCORE: <span id="hi-score-number">0</span></h3>
             <h3 id="score">SCORE: <span id="score-number">0</span></h3>
         </div>
+    </div>
+
+    <div id="game-over-screen">
+        <h2 id="game-over-text">GAME OVER</h2>
+        <button id="try-again" onclick="playButton()"><h3>Try Again?</h3></button>
     </div>
 
     <footer id="footer">
