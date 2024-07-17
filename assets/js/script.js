@@ -104,7 +104,7 @@ function highScore() {
 }
 
 function gameOver () {
-
+    window.alert("Game over");
 }
 
 function success() {
