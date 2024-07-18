@@ -10,6 +10,18 @@ const game = {
     turnNumber: 0,
 }
 
+const modal = document.getElementById("how-to-play-modal");
+const modalButton = document.getElementById("how-to-play-button");
+const closeSpan = document.getElementsByClassName("close");
+
+function modalOpen() {
+    modal.style.display = "block";
+}
+
+function modalCloseX() {
+    modal.style.display = "none";
+}
+
 
 // Brings up the game area and hides the play button upon clicking, then starts the game
 function playButton() {
