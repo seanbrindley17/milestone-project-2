@@ -39,3 +39,5 @@ Wireframes were created on balsamiq for mobile, tablet and desktop displays.
 * I used code from [Geeks for Geeks (Method 2)](https://www.geeksforgeeks.org/how-to-compare-two-arrays-in-javascript/) for having precisely what I needed to help me write some simple array comparing code.
 
 * I used code from [this Simon game example](https://www.geeksforgeeks.org/create-a-simon-game-using-html-css-javascript/) from Geeks for Geeks for my playSequence function that I was struggling on.
+
+* I used code from [this w3schools page](https://www.w3schools.com/howto/howto_css_modals.asp) to help build my how to play modal.
