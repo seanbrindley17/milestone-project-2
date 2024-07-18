@@ -12,14 +12,14 @@
     <header>
         <nav id="navbar">
             <span><h1>MEMORY GAME</h1></span>
-            <span><button id="how-to-play-button"><h2>HOW TO PLAY</h2></button></span>
+            <span><button id="how-to-play-button" onclick="modalOpen()"><h2>HOW TO PLAY</h2></button></span>
         </nav>
     </header>
 
     <div id="how-to-play-model" class="model">
         <div class="model-content">
             <div id="modal-header">
-                <span class="close">&times;</span>
+                <span class="close" onclick="modalCloseX()">&times;</span>
                 <h2>HOW TO PLAY</h2>
             </div>
             <div id="modal-body">
