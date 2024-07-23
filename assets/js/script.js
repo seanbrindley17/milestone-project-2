@@ -1,5 +1,5 @@
 
-
+// Game State
 const game = {
     score: 0,
     hiscore: '',
@@ -10,14 +10,17 @@ const game = {
     turnNumber: 0,
 }
 
+// Gets the html elements needed and sets them as constants for the following two functions
 const modal = document.getElementById("how-to-play-modal");
 const modalButton = document.getElementById("how-to-play-button");
 const closeSpan = document.getElementsByClassName("close");
 
+// Changes the display type of the modal from none to block
 function modalOpen() {
     modal.style.display = "block";
 }
 
+// Changes the display type of the modal from block to none when the close button is clicked
 function modalCloseX() {
     modal.style.display = "none";
 }
@@ -110,11 +113,15 @@ function compareChoice() {
 }
 
 
-
+// Selects the current score element and updates it in real time using innerText
 function showScore() {
     document.getElementById("score-number").innerText = game.score;
 }
 
+/* Checks if local storage is applicable. Sets highScore variable to be stored 
+* in local storage and then compares against current game score. If current score is greater
+* it overwrites the highScore value being stored in local storage and then displays to the user via innerText
+*/
 function highScore() {
     if (localStorage) {
         let highScore = localStorage.getItem('highScore');
@@ -134,16 +141,17 @@ function highScore() {
     };
 }
 
-
- 
-
+// Hides the game area, shows the game over screen with the player's score displayed and the option to try again
 function gameOver () {
-    window.alert("Game over");
     document.getElementById("game-area").classList.add("hide-content");
     document.getElementById("game-over-screen").classList.remove("hide-content");
     document.getElementById("final-score").innerText = game.score;
 }
 
+/* This function restarts the game with all arrays and number set to their default
+* Functions almost exactly like startGame just without adding event listeners upon clicking as they 
+* will already be there.
+*/
 function tryAgain () {
     document.getElementById("game-over-screen").classList.add("hide-content");
     document.getElementById("game-area").classList.remove("hide-content");
@@ -156,12 +164,14 @@ function tryAgain () {
     showScore();
 }
 
+// Upon successful player sequence, increases score by 1 and calls the computer to have it's turn
 function success() {
     game.score++;
     showScore();
     computerTurn();
 }
 
+// Adds the card-highlight class to the card called with this function and removes it after 800ms
 function cardHighlight(card) {
     card.classList.add("card-highlight");
     setTimeout(() => {
