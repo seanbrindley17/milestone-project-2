@@ -64,6 +64,7 @@ function computerTurn() {
 
 // Function that iterates through the computerCardSelection array and highlights the divs sequentially
 function playSequence() {
+    game.turnInProgress = true;
     let i = 0;
     const sequence = setInterval(() => {
         if (i < game.computerCardSelection.length) {
@@ -74,6 +75,7 @@ function playSequence() {
             i++;
         } else {
             clearInterval(sequence);
+            game.turnInProgress = false;
         }
     }, 750);
 }
