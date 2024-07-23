@@ -69,6 +69,22 @@ body {
     width: 25px;
 }
 
+/* Home Page Welcome Box
+----------------------------------------------------------------------------- */
+
+#welcome-container {
+    background-color: white;
+    position: relative;
+    top: 100px;
+    height: 100px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+#welcome-container p {
+    text-align: center;
+}
+
 /* Play Button
 ----------------------------------------------------------------------------- */
 
