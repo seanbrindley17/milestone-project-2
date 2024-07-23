@@ -100,6 +100,7 @@ function cardEventListeners() {
 function compareChoice() {
     for (let i = 0; i < game.computerCardId.length; i++) {
         if (game.playerFlip[i] !== game.computerCardId[i]) {
+            highScore();
             console.log("gameover");
             return gameOver();
         }
@@ -115,8 +116,24 @@ function showScore() {
 }
 
 function highScore() {
-
+    if (localStorage) {
+        let highScore = localStorage.getItem('highScore');
+        if (highScore === null) {
+            highScore = 0;
+            localStorage.setItem("highScore", highScore);
+        } else {
+            highScore = parseInt(highScore, 10);
+        };
+        
+        const currentScore = game.score;
+        if (currentScore > highScore) {
+            localStorage.setItem('highScore', currentScore);
+            highScore = currentScore;
+        }
+        document.getElementById("hi-score-number").innerText = highScore;
+    };
 }
+
 
  
 
