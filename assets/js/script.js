@@ -77,7 +77,7 @@ function playSequence() {
             clearInterval(sequence);
             game.turnInProgress = false;
         }
-    }, 750);
+    }, 1000);
 }
 
 
@@ -178,6 +178,7 @@ function cardHighlight(card) {
     card.classList.add("card-highlight");
     setTimeout(() => {
         card.classList.remove("card-highlight");
+        setTimeout(200);
     }, 800);
 }
 
