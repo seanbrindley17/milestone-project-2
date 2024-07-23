@@ -59,7 +59,15 @@ body {
     width: 300px;
 }
 
-.close {
+#modal-header h2 {
+    text-align: center;
+}
+
+#modal-body p {
+    text-align: center;
+}
+
+/* .close {
     cursor: pointer;
     font-size: 45px;
     float: right;
@@ -67,6 +75,11 @@ body {
     
     height: 25px;
     width: 25px;
+} */
+
+#close-btn-container {
+    display: flex;
+    justify-content: center;
 }
 
 .close-btn {
