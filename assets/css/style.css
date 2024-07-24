@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: black;
+    background: url(../images/background-images/pexels-pixelcop-2680270.jpg);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
