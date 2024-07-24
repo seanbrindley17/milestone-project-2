@@ -18,11 +18,13 @@ const closeSpan = document.getElementsByClassName("close");
 // Changes the display type of the modal from none to block
 function modalOpen() {
     modal.style.display = "block";
+    document.getElementById("play-btn").classList.add("hide-content");
 }
 
 // Changes the display type of the modal from block to none when the close button is clicked
 function modalCloseX() {
     modal.style.display = "none";
+    document.getElementById("play-btn").classList.remove("hide-content");
 }
 
 
