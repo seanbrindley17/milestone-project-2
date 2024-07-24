@@ -36,6 +36,10 @@ Wireframes were created on balsamiq for mobile, tablet and desktop displays.
 
 ### Colours/Background
 
+I wanted to have a pleasant to look at yet not oppressive or complicated background, so initially I decided on a blue background image as shown below which was downloaded from [Pexels](https://www.pexels.com/photo/blue-wallpaper-2680270/).
+
+![background image](/assets/images/background-images/pexels-pixelcop-2680270.jpg)
+
 ### Fonts
 
 I decided to use "[Roboto](https://fonts.google.com/specimen/Roboto)" for my main font as it's a popular, modern looking font and fits in well thematically with many projects including for game text.
