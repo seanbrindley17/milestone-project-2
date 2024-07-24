@@ -30,6 +30,10 @@ body {
     height: 50px;
 }
 
+#navbar h1 {
+    font-size: 1.3rem;
+}
+
 #navbar span {
     display: flex;
     align-items: center;
