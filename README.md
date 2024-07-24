@@ -2,6 +2,16 @@
 
 * Simple memory game
 
+## UX 
+
+### Project Goal
+
+The goal of this project was to create a simple, single page browser game using HTML, CSS and Javascript. I chose to do a game because I wanted to understand how to use loops and if statements correctly, among other things, and the best way to learn is by doing. This project satisfies the one page requirement and the use of Javascript for interactive elements.
+
+The game itself is a sequence-based memory game. To start, the computer lights up one card, the player then chooses the card highlighted. The computer then adds one card to it's sequence and the player must remember the longer sequence and click the correct cards in order and so on.
+
+My design was created as a series of wireframes for mobile, tablet and desktop. This was then adapted and changed based upon what I could feasibly build with my introductory skillset.
+
 ## User Stories
 
 ### New Site Users
