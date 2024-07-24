@@ -34,6 +34,12 @@ Wireframes were created on balsamiq for mobile, tablet and desktop displays.
 
 ![main wireframe](/readme%20documentations/wireframes/main%20wireframe%20v2.png)
 
+### Colours/Background
+
+### Fonts
+
+I decided to use "[Roboto](https://fonts.google.com/specimen/Roboto)" for my main font as it's a popular, modern looking font and fits in well thematically with many projects including for game text.
+
 ## Credits
 
 * Finding [this page](https://www.w3schools.com/jsref/dom_obj_html_nodelist.asp) on W3 Schools that informed me that a nodelist is not an array.
