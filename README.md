@@ -44,6 +44,8 @@ I wanted to have a pleasant to look at yet not oppressive or complicated backgro
 
 I decided to use "[Roboto](https://fonts.google.com/specimen/Roboto)" for my main font as it's a popular, modern looking font and fits in well thematically with many projects including for game text.
 
+I decided to use "[Anton](https://fonts.google.com/specimen/Anton)" for heading text so that not all pieces of text looked the same"
+
 ## Credits
 
 * Finding [this page](https://www.w3schools.com/jsref/dom_obj_html_nodelist.asp) on W3 Schools that informed me that a nodelist is not an array.
