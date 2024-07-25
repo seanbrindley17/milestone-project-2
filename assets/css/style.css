@@ -62,6 +62,7 @@ body {
 
 .modal {
     background-color: white;
+    opacity: 0.7;
     display: none;
     position: fixed;
     z-index: 1;
@@ -70,14 +71,15 @@ body {
     left: 0;
     right: 0;
     margin: auto;
-    height: 325px;
+    height: 375px;
     width: 300px;
+    border: 2px solid aquamarine;
 }
 
 #modal-header h2 {
     text-align: center;
     padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 #modal-body {
@@ -86,6 +88,7 @@ body {
 
 #modal-body p {
     text-align: center;
+    line-height: 1.5;
 }
 
 /* .close {
@@ -198,8 +201,14 @@ body {
     border: 10px solid red;
 }
 
+
+
+/* Score Area
+----------------------------------------------------------------------------- */
+
 #score-area {
-    background-color: yellow;
+    background-color: white;
+    opacity: 0.3;
     display: flex;
     justify-content: space-between;
 }
@@ -220,6 +229,7 @@ body {
     height: 300px;
     width: 300px;
     background-color: white;
+    opacity: 0.5;
     top: 0;
     bottom: 0;
     left: 0;
