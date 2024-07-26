@@ -66,6 +66,8 @@ I decided to use "[Anton](https://fonts.google.com/specimen/Anton)" for heading 
 
 * I used code from [this Reddit post](https://www.reddit.com/r/learnjavascript/comments/ii6yzh/making_a_high_score_localstorage/) and [this GameDevJS article](https://gamedevjs.com/articles/using-local-storage-for-high-scores-and-game-progress/#:~:text=You%20can%20do%20this%20by,value%20associated%20with%20a%20key.) to help build my highScore function.
 
+* I used code from this [jsbin](https://jsbin.com/ribacacazi/edit?html,css,output) post to get a border around the letters of my title.
+
 #### Hover.css
 
 I utilised code from [hover.css](https://ianlunn.github.io/Hover/) by Ian Lunn to put effects on my how to play, play and try again buttons. These credits will be documented here.
