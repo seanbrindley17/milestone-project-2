@@ -38,37 +38,37 @@
         </div>
     </div>
 
-    <div id="welcome-container">
+    <div id="welcome-container" class="hide-content">
         <h2>Welcome to my memory game!</h2>
         <p>I created this simple sequence memory game for Milestone Project 2 of CodeInstitute's Web Application Design course.</p>
         <p>There is no end goal, just get your sequence score as high as you can!</p>
         <p>Press the button below to begin</p>
     </div>
 
-    <div class="container" id="btn-container">
-        <button id="play-btn" onclick="playButton()"><h2>PLAY</h2><button>
-    </div>
+    <!-- <div class="container" id="btn-container">
+        <button id="play-btn" class="hide-content" onclick="playButton()"><h2>PLAY</h2><button>
+    </div> -->
 
     <!-- Remember to put class = "hide-content" inside this game-area div -->
     <div id="game-area" class="">
         
         <div class="choice-cards upper-row">
-            <div class="card card1" id="button1"><img src="assets/images/card images/number 1.png" alt="number one"></div>
-            <div class="card card2" id="button2"><img src="assets/images/card images/number 2.png" alt="number two"></div>
-            <div class="card card3" id="button3"><img src="assets/images/card images/number 3.png" alt="number three"></div>
-            <div class="card card4" id="button4"><img src="assets/images/card images/number 4.png" alt=""></div>
+            <div class="card card1" id="button1"><h2 class="single-digit">1</h2></div>
+            <div class="card card2" id="button2"><h2 class="single-digit">2</h2></div>
+            <div class="card card3" id="button3"><h2 class="single-digit">3</h2></div>
+            <div class="card card4" id="button4"><h2 class="single-digit">4</h2></div>
         </div>
         <div class="choice-cards middle-row">
-            <div class="card card5" id="button5"><img src="assets/images/card images/number 5.png" alt=""></div>
-            <div class="card card6" id="button6"><img src="assets/images/card images/number 6.png" alt=""></div>
-            <div class="card card7" id="button7"><img src="assets/images/card images/number 7.png" alt=""></div>
-            <div class="card card8" id="button8"><img src="assets/images/card images/number 8.png" alt=""></div>
+            <div class="card card5" id="button5"><h2 class="single-digit">5</h2></div>
+            <div class="card card6" id="button6"><h2 class="single-digit">6</h2></div>
+            <div class="card card7" id="button7"><h2 class="single-digit">7</h2></div>
+            <div class="card card8" id="button8"><h2 class="single-digit">8</h2></div>
         </div>
         <div class="choice-cards bottom-row">
-            <div class="card card9" id="button9"><img src="assets/images/card images/number 9.png" alt=""></div>
-            <div class="card card10" id="button10"><img src="assets/images/card images/number 10.png" alt=""></div>
-            <div class="card card11" id="button11"><img src="assets/images/card images/number 11.png" alt=""></div>
-            <div class="card card12" id="button12"><img src="assets/images/card images/number 12.png" alt=""></div>
+            <div class="card card9" id="button9"><h2 class="single-digit">9</h2></div>
+            <div class="card card10" id="button10"><h2 class="double-digit">10</h2></div>
+            <div class="card card11" id="button11"><h2 class="double-digit">11</h2></div>
+            <div class="card card12" id="button12"><h2 class="double-digit">12</h2></div>
         </div>
 
         <div id="score-area">
@@ -78,7 +78,7 @@
     </div>
 
     <!-- remember to add hide-content class to game over screen div for the finished game -->
-    <div id="game-over-screen" class="">
+    <div id="game-over-screen" class="hide-content">
         <div class="game-over-container">
             <h2 id="game-over-text">GAME OVER</h2>
             <h3>Your score was <span id="final-score">0</span></h3>
