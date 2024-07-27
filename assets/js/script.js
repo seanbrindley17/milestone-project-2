@@ -103,6 +103,16 @@ function cardEventListeners() {
     };
 }
 
+function playerClick(card) {
+    if (game.turnInProgress === false) {
+        card.classList.add("player-card-highlight");
+        setTimeout(() => {
+            card.classList.remove("player-card-highlight");
+            setTimeout;
+        }, 800);
+    };
+}
+
 // Uses a for loop to iterate through the playerFlip and computerCardId arrays and checks that the indexes are the same
 function compareChoice() {
     for (let i = 0; i < game.computerCardId.length; i++) {

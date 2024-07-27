@@ -27,7 +27,6 @@ body {
     position: sticky;
     justify-content: space-between;
     background-color: none;
-    height: 50px;
 }
 
 #navbar h1 {
@@ -203,7 +202,7 @@ body {
 /* } */
 
 .choice-cards {
-    height: 100px;
+    height: 125px;
     width: 80%;
     display: flex;
     justify-content: space-between;
@@ -211,17 +210,45 @@ body {
     margin: 20px auto;
 }
 
+.choice-cards h2 {
+    -webkit-text-stroke: rgb(11, 148, 102) 1px;
+}
+
 .card {
-    background-color: green;
+    background-color: none;
     height: 75px;
     width: 40px;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
+    border: 1px solid black;
+}
+
+.single-digit {
+    font-family: "Anton", sans-serif;
+    font-weight: 300;
+    font-size: 5.5rem;
+    color: darkblue;
+}
+
+.double-digit {
+    font-family: "Anton", sans-serif;
+    font-weight: 300;
+    font-size: 5rem;
+    color: darkblue;
+}
+
+.player-card-highlight {
+    border: 10px solid green;
 }
 
 .card-highlight {
     border: 10px solid red;
 }
+
+/* Game Area media queries
+----------------------------------------------------------------------------- */
 
 
 
