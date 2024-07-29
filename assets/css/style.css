@@ -48,6 +48,36 @@ body {
     margin: 10px;
 }
 
+/* Navbar media queries
+----------------------------------------------------------------------------- */
+
+@media screen and (min-width: 700px) {
+    #navbar h1 {
+        font-size: 3.5rem;
+    }
+}
+
+@media screen and (min-width: 950px) {
+    #navbar {
+        position: relative;
+    }
+
+    #title-span {
+        position: relative;
+        left: 5%;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    #navbar h1 {
+        font-size: 5rem;
+    }
+
+    #title-span {
+        left: 10%;
+    }
+}
+
 /* How To Play Button
 ----------------------------------------------------------------------------- */
 
@@ -62,6 +92,40 @@ body {
     font-family: "Anton", sans-serif;
     font-size: 1.7rem;
     color: darkblue;
+}
+
+/* How To Play Button media queries
+----------------------------------------------------------------------------- */
+
+@media screen and (min-width: 700px) {
+    #how-to-play-button {
+        height: 100px;
+    }
+
+    #how-to-play-button h2 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width: 950px) {
+    #how-to-play-span {
+        position: relative;
+        right: 5%;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    #how-to-play-button {
+        height: 125px;
+    }
+
+    #how-to-play-button h2 {
+        font-size: 3.5rem;
+    }
+
+    #how-to-play-span {
+        right: 10%;
+    }
 }
 
 /* How To Play Modal
@@ -154,6 +218,27 @@ body {
     letter-spacing: 1px;
 }
 
+/* Home Page Welcome Box media queries
+----------------------------------------------------------------------------- */
+
+@media screen and (min-width: 1400px) {
+    #welcome-container {
+        height: 400px;
+        width: 600px
+    }
+
+    #welcome-container h2 {
+        font-size: 2.7rem;
+        padding-top: 15px;
+        padding-bottom: 30px;
+    }
+
+    #welcome-container p {
+        font-size: 1.5rem;
+        line-height: 3rem;
+    }
+}
+
 /* Play Button
 ----------------------------------------------------------------------------- */
 
@@ -161,7 +246,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30vh;
+    margin-top: 25vh;
 }
 
 #play-btn {
