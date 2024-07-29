@@ -74,7 +74,7 @@ body {
     }
 
     #title-span {
-        left: 10%;
+        left: 20%;
     }
 }
 
@@ -357,7 +357,7 @@ body {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    border: 1px solid black;
+    
 }
 
 .card10, .card11, .card12 {
