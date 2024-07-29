@@ -59,22 +59,19 @@ body {
 
 @media screen and (min-width: 950px) {
     #navbar {
-        position: relative;
+        justify-content: center;
     }
 
     #title-span {
-        position: relative;
-        left: 5%;
+        padding-right: 100px;
     }
+
+    
 }
 
 @media screen and (min-width: 1400px) {
     #navbar h1 {
         font-size: 5rem;
-    }
-
-    #title-span {
-        left: 20%;
     }
 }
 
@@ -109,8 +106,7 @@ body {
 
 @media screen and (min-width: 950px) {
     #how-to-play-span {
-        position: relative;
-        right: 5%;
+        padding-left: 100px;
     }
 }
 
@@ -121,10 +117,6 @@ body {
 
     #how-to-play-button h2 {
         font-size: 3.5rem;
-    }
-
-    #how-to-play-span {
-        right: 10%;
     }
 }
 
@@ -466,7 +458,7 @@ body {
 ----------------------------------------------------------------------------- */
 
 #game-over-screen {
-    height: 300px;
+    height: 400px;
     width: 300px;
     background-color: white;
     border: 2px aquamarine solid;
@@ -497,13 +489,51 @@ body {
     font-size: 2rem;
     color: darkblue;
     margin: 25px;
+    padding-top: 20px;
 }
 
 #try-again {
+    position: relative;
+    margin: 0 auto;
     height: 125px;
     width: 130px;
-    top: 20px;
+    top: 70px;
     font-size: 1.5rem;
+    border: 2px solid aquamarine;
+}
+
+/* Game Over Page media queries
+----------------------------------------------------------------------------- */
+
+@media screen and (min-width: 750px) {
+    #game-over-text {
+        font-size: 2.5rem;
+    }
+
+    .game-over-container h3 {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    #game-over-screen {
+        height: 500px;
+        width: 400px;
+    }
+
+    #game-over-text {
+        font-size: 4rem;
+        padding-top: 30px;
+    }
+
+    .game-over-container h3 {
+        font-size: 2rem;
+    }
+
+    #try-again {
+        height: 150px;
+        width: 165px;
+    }
 }
 
 /* Footer 
