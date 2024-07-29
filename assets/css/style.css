@@ -116,7 +116,7 @@ body {
 
 @media screen and (min-width: 1400px) {
     #how-to-play-button {
-        height: 125px;
+        height: 100px;
     }
 
     #how-to-play-button h2 {
@@ -186,6 +186,30 @@ body {
     padding: 10px;
     margin-top: 10px;
     position: relative;
+}
+
+/* How To Play Modal media queries
+----------------------------------------------------------------------------- */
+
+@media screen and (min-width: 1300px) {
+    .modal {
+        height: 500px;
+        width: 400px;
+    }
+
+    #modal-header h2 {
+        font-size: 2.8rem;
+        padding-top: 20px;
+    }
+
+    #modal-body p {
+        font-size: 1.3rem;
+        padding-bottom: 20px;
+    }
+
+    .close-btn {
+        font-size: 1.5rem;
+    }
 }
 
 /* Home Page Welcome Box
@@ -263,6 +287,32 @@ body {
     font-family: "Anton", sans-serif;
     font-size: 4rem;
     color: darkblue;
+}
+
+/* Play Button media queries
+----------------------------------------------------------------------------- */
+
+@media screen and (min-width: 700px) {
+    #play-btn  {
+        height: 120px;
+        width: 175px;
+    }
+
+    #play-btn h2 {
+        font-size: 4.5rem;
+        letter-spacing: 5px;
+    }
+}
+
+@media screen and (min-width: 950px) {
+    #play-btn {
+        height: 135px;
+        width: 200px;
+    }
+
+    #play-btn h2 {
+        font-size: 5rem;
+    }
 }
 
 /* Game Area
