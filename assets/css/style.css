@@ -360,6 +360,10 @@ body {
     border: 1px solid black;
 }
 
+.card10, .card11, .card12 {
+    width: 50px;
+}
+
 .single-digit {
     font-family: "Anton", sans-serif;
     font-weight: 300;
@@ -385,7 +389,40 @@ body {
 /* Game Area media queries
 ----------------------------------------------------------------------------- */
 
+@media screen and (min-width: 700px) {
+    .choice-cards {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
 
+    .single-digit {
+        font-size: 6rem;
+    }
+
+    .double-digit {
+        font-size: 5.5rem;
+    }
+
+    .player-card-highlight {
+        border: 15px solid green;
+    }
+
+    .card-highlight {
+        border: 15px solid red;
+    }
+}
+
+@media screen and (min-width: 950px) {
+    .choice-cards {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .choice-cards {
+        width: 50%;
+    }
+}
 
 /* Score Area
 ----------------------------------------------------------------------------- */
@@ -395,6 +432,10 @@ body {
     opacity: 0.3;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid aquamarine;
 }
 
 #score {
@@ -404,6 +445,21 @@ body {
 
 #hi-score {
     padding-left: 5%;
+}
+
+/* Score Area media queries
+----------------------------------------------------------------------------- */
+
+@media screen and (min-width: 950px) {
+    #score-area {
+        width: 65%;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    #score-area {
+        width: 55%;
+    }
 }
 
 /* Game Over Page
