@@ -26,7 +26,6 @@ body {
     display: flex;
     position: sticky;
     justify-content: space-between;
-    background-color: none;
 }
 
 #title-span {
@@ -300,19 +299,6 @@ body {
     flex-direction: column;
 }
 
-/* #computer-area {
-    height: 150px;
-    display: flex;
-}
-
-#computer-turn {
-    background-color: #d32626;
-    opacity: 50%;
-    height: 100px;
-    width: 75px;
-    margin: 25px auto; */
-/* } */
-
 .choice-cards {
     height: 125px;
     width: 80%;
@@ -327,7 +313,6 @@ body {
 }
 
 .card {
-    background-color: none;
     height: 75px;
     width: 40px;
     display: flex;
@@ -533,7 +518,6 @@ body {
     bottom: 0;
     width: 100%;
     height: 25px;
-    background-color: none;
     text-align: center;
 }
 

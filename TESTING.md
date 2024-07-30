@@ -18,8 +18,10 @@ I used the [W3C HTML Validator](https://validator.w3.org/nu/) to validate the my
 
 I used the [W3C CSS Validator]() to validate my CSS style sheet for this project.
 
-| File | W3C URL | Screenshot | Notes |
-| :---: | :---: | :---: | :---: |
+| File | Screenshot | Notes |
+| :---: | :---: | :---: |
+| style.css | ![screenshot of initial validation with errors](/readme%20documentations/screenshots/css%20validator%20screenshots/css%20validation%20with%20intial%20errors.png) | Errors arising from me using background-color: none while tinkering and not removing these before validating. |
+| style.css | ![screenshot of css validation success](/readme%20documentations/screenshots/css%20validator%20screenshots/css%20validation%20success.png) | Fixed by going through and removing the offending attributes. |
 
 ### Javascript 
 
