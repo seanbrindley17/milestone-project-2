@@ -86,6 +86,11 @@ I used the web accessibility evaluation tool [WAVE](https://wave.webaim.org/) to
 
 ## Bugs/Issues
 
+My biggest issue was during the resizing. When trying to adjust media queries for the larger screen sizes, I found that I couldn't get it to display well on both my laptop screen and my large screen despite the screen resolution being exactly the same. I chose to focus on my laptop for the large screen size as more people would be using a laptop than a large screen but to this point I have no idea what to do about this issue. 
+
+![screenshot of game area as displayed on my laptop](/readme%20documentations/screenshots/bugs%20and%20issues%20screenshots/laptop%20game%20area%20display.png)
+
+![screenshot of game area as displayed on large screen](/readme%20documentations/screenshots/bugs%20and%20issues%20screenshots/large%20screen%20game%20area%20display.png)
 
 --- 
 
