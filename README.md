@@ -2,6 +2,14 @@
 
 * Simple memory game
 
+---
+
+## Mockup Screenshots
+
+I used the [Am I Responsive]() website to create a mockup of how the site could look on multiple different display sizes.
+
+![screenshot of mockups from am i responsive]()
+
 ## UX 
 
 ### Project Goal
@@ -40,11 +48,80 @@ I wanted to have a pleasant to look at yet not oppressive or complicated backgro
 
 ![background image](/assets/images/background-images/pexels-pixelcop-2680270.jpg)
 
+My text was mainly dark blue, with some flavour text being in black. This was to stick to the simple blue theme. Additionally I used an aquamarine border around my heading, numbers and pop up boxes, I thought this looked nice. 
+
+The pop up boxes were an opaque background, this meant that the blue still dominated yet the text inside was legible.
+
 ### Fonts
 
-I decided to use "[Roboto](https://fonts.google.com/specimen/Roboto)" for my main font as it's a popular, modern looking font and fits in well thematically with many projects including for game text.
+I decided to use "[Roboto](https://fonts.google.com/specimen/Roboto)" for my flavour text font such as for the how to play description and the game over text.
 
-I decided to use "[Anton](https://fonts.google.com/specimen/Anton)" for heading text so that not all pieces of text looked the same"
+I decided to use "[Anton](https://fonts.google.com/specimen/Anton)" for heading text and the game numbers as this looked better with a border around it.
+
+The Github icon in my footer was from [Font Awesome]()
+
+### Technology Used 
+
+#### Coding Languages Used
+
+* HTML - For site content.
+
+* CSS - For site design and layout.
+
+* Javascript - For site interactivity and dynamic elements.
+
+#### Software and Programs Used
+
+* [VSCode](https://code.visualstudio.com/) - IDE used to create website and style.
+    * [Google Fonts](https://fonts.google.com/) - Location of fonts used.
+    * [Font Awesome](https://fontawesome.com/) - Location of icons used.
+
+* [Git](https://git-scm.com/) - Version control.
+
+* [Github](https://github.com/) - For secure code storage.
+
+* [Github Pages](https://pages.github.com/) - To host the deployed site.
+
+* [W3 Schools](https://www.w3schools.com/) - For extra help with remembering how to use bits of code correctly.
+
+* [balsamiq](https://balsamiq.com/) - Used to create wireframes.
+
+* [Snipping Tool](https://support.microsoft.com/en-us/windows/use-snipping-tool-to-capture-screenshots-00246869-1843-655f-f220-97299b865f6b) - To get relevant screenshots as required.
+
+## Features 
+
+### Existing Features 
+
+| Feature | Description | Screenshot |
+| :---: | :---: | :---: |
+
+### Future Features
+
+
+
+## Testing 
+
+All testing is documented on the [TESTING.md](TESTING.md) file.
+
+## Deployment
+
+The site was deployed on Github pages.
+
+The steps of deployment are as follows:
+
+
+### Local Deployment 
+
+To create a local copy of the site, you can clone of fork this repository.
+
+#### Cloning
+
+To clone the repository:
+
+#### Forking
+
+To fork this repository:
+
 
 ## Credits
 
