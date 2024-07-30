@@ -38,3 +38,55 @@ I used the [JSHint validator](https://jshint.com/) to validate my Javascript cod
 | script.js | ![screenshot of confusing warning in cardEventListeners](/readme%20documentations/screenshots/js%20validator%20screenshots/cardEventListeners%20warning%20.png) | Warning for some syntax that I really don't understand. The code still works. |
 | script.js | ![screenshot of undefined variable](/readme%20documentations/screenshots/js%20validator%20screenshots/undefined%20variable%20jquery.png) | One undefined variable, which is the JQuery selector that was used for one function. |
 | script.js | ![screenshot of supposed unused variables](/readme%20documentations/screenshots/js%20validator%20screenshots/unused%20variables.png) | Supposedly unused variables even though they are used and all are important and working. | 
+
+## Browser Compatibility
+
+I tested my site with these browsers to check for any compatibility issues.
+
+| Browser | Home Page | Modal | Game Page | Game Over Page | Notes |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| Chrome |
+| Edge |
+| Firefox |
+| Opera |
+
+## Responsiveness 
+
+I tested my site on multple devices using either my own devices or chrome dev tools to simulate the device.
+
+| Device | Home Page | Modal | Game Page | Game Over Page | Notes |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| Acer Aspire Laptop |
+| Samsung Galaxy S10 Lite |
+| Tablet (Devtools - iPad Mini) |
+
+## Accessibility 
+
+I used the web accessibility evaluation tool [WAVE](https://wave.webaim.org/) to test my project for accessibility issues.
+
+| Page | Summary | Details | Contrast | Notes |
+| :---: | :---: | :---: | :---: | :---: |
+| index.html |
+
+## Lighthouse Audit
+
+| Page | Desktop | Mobile | Notes |
+| :---: | :---: | :---: | :---: |
+| Main |
+
+## User Story Testing 
+
+| User Story | Screenshot |
+| :---: | :---: |
+
+## Defensive Programming 
+
+| Page | Expectation | Test | Result | Fix | Screenshot |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+
+## Bugs/Issues
+
+
+--- 
+
+Return to the [README.md](README.md).
