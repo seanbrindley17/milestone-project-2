@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 
 // Game State
 const game = {
@@ -8,7 +10,7 @@ const game = {
     turnInProgress: false,
     playerFlip: [],
     turnNumber: 0,
-}
+};
 
 // Gets the html elements needed and sets them as constants for the following two functions
 const modal = document.getElementById("how-to-play-modal");
@@ -58,13 +60,9 @@ function startGame() {
 function computerTurn() {
     game.playerFlip = [];
     game.turnNumber++;
-    console.log(game.turnNumber, "Turn number");
     const randomSelect = randomCardSelect();
     game.computerCardSelection.push(randomSelect);
-
     game.computerCardId.push(randomSelect.id);
-    console.log(game.computerCardSelection, "computer card actual div");
-    console.log(game.computerCardId, "computer card button id");
     playSequence();
 }
 
@@ -97,14 +95,13 @@ function cardEventListeners() {
             if (!game.turnInProgress && game.computerCardSelection.length > 0) {
                 let playerChoice = event.currentTarget;
                 game.playerFlip.push(playerChoice.id);
-                console.log(game.playerFlip, "player choice button id");
                 
                 if (game.playerFlip.length === game.computerCardSelection.length) {
                     compareChoice();
-                };
-            };
+                }
+            }
         });
-    };
+    }
 }
 
 function playerClick(card) {
@@ -114,7 +111,7 @@ function playerClick(card) {
             card.classList.remove("player-card-highlight");
             setTimeout;
         }, 800);
-    };
+    }
 }
 
 // Uses a for loop to iterate through the playerFlip and computerCardId arrays and checks that the indexes are the same
@@ -122,11 +119,9 @@ function compareChoice() {
     for (let i = 0; i < game.computerCardId.length; i++) {
         if (game.playerFlip[i] !== game.computerCardId[i]) {
             highScore();
-            console.log("gameover");
             return gameOver();
         }
     }
-    console.log("Correct");
     success();
 }
 
@@ -148,7 +143,7 @@ function highScore() {
             localStorage.setItem("highScore", highScore);
         } else {
             highScore = parseInt(highScore, 10);
-        };
+        }
         
         const currentScore = game.score;
         if (currentScore > highScore) {
@@ -156,7 +151,7 @@ function highScore() {
             highScore = currentScore;
         }
         document.getElementById("hi-score-number").innerText = highScore;
-    };
+    }
 }
 
 // Hides the game area, shows the game over screen with the player's score displayed and the option to try again
@@ -194,7 +189,6 @@ function cardHighlight(card) {
     card.classList.add("card-highlight");
     setTimeout(() => {
         card.classList.remove("card-highlight");
-        setTimeout(200);
     }, 800);
 }
 
