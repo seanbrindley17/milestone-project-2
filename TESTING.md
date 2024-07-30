@@ -10,6 +10,8 @@ I used the [W3C HTML Validator](https://validator.w3.org/nu/) to validate the my
 
 | Page | W3C URL | Screenshot | Notes |
 | :---: | :---: | :---: | :---: |
+| index.html | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fseanbrindley17.github.io%2Fmilestone-project-2%2F) | ![screenshot of initial errors](/readme%20documentations/screenshots/html%20validator%20screenshots/initial%20validation%20with%20errors.png) | Intial errors upon first validation. Mainly errors of putting block elements inside spans. |
+| index.html | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fseanbrindley17.github.io%2Fmilestone-project-2%2F#textarea) | ![screenshot of document checked with no errors or warnings](/readme%20documentations/screenshots/html%20validator%20screenshots/fixed%20html%20validation%20errors.png) | Fixed by removing invalid elements within other elements, along with one instance of not closing a button tag correctly. |
 
 
 ### CSS

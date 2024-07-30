@@ -29,7 +29,7 @@ body {
     background-color: none;
 }
 
-#navbar h1 {
+#title-span {
     font-family: "Anton", sans-serif;
     font-size: 2.5rem;
     font-weight: 900;
@@ -52,7 +52,7 @@ body {
 ----------------------------------------------------------------------------- */
 
 @media screen and (min-width: 700px) {
-    #navbar h1 {
+    #title-span {
         font-size: 3.5rem;
     }
 }
@@ -70,7 +70,7 @@ body {
 }
 
 @media screen and (min-width: 1400px) {
-    #navbar h1 {
+    #title-span {
         font-size: 5rem;
     }
 }
@@ -82,10 +82,7 @@ body {
     cursor: pointer;
     padding: 5px;
     border-radius: 5%;
-    background-color: rgba(255, 255, 255, 0.5)
-}
-
-#how-to-play-button h2 {
+    background-color: rgba(255, 255, 255, 0.5);
     font-family: "Anton", sans-serif;
     font-size: 1.7rem;
     color: darkblue;
@@ -97,9 +94,6 @@ body {
 @media screen and (min-width: 700px) {
     #how-to-play-button {
         height: 60px;
-    }
-
-    #how-to-play-button h2 {
         font-size: 3rem;
     }
 }
@@ -113,9 +107,6 @@ body {
 @media screen and (min-width: 1400px) {
     #how-to-play-button {
         height: 60px;
-    }
-
-    #how-to-play-button h2 {
         font-size: 3.5rem;
     }
 }
@@ -268,18 +259,15 @@ body {
 
 #play-btn {
     height: 75px;
-    padding: 10px;
     cursor: pointer;
     border: 2px aquamarine solid;
     background: #ffffff;
     opacity: 0.5;
-    z-index: 0;
-}
-
-#play-btn h2 {
     font-family: "Anton", sans-serif;
     font-size: 4rem;
     color: darkblue;
+    text-align: center;
+    line-height: 75px;
 }
 
 /* Play Button media queries
@@ -288,10 +276,8 @@ body {
 @media screen and (min-width: 700px) {
     #play-btn  {
         height: 100px;
+        line-height: 100px;
         width: 175px;
-    }
-
-    #play-btn h2 {
         font-size: 4.5rem;
         letter-spacing: 5px;
     }
@@ -300,10 +286,8 @@ body {
 @media screen and (min-width: 950px) {
     #play-btn {
         height: 100px;
+        line-height: 100px;
         width: 175px;
-    }
-
-    #play-btn h2 {
         font-size: 5rem;
     }
 }
@@ -481,8 +465,12 @@ body {
     align-items: center;
 }
 
-.game-over-container h3 {
+#try-again {
+    cursor: pointer;
     margin: 10px;
+    font-family: "Anton", sans-serif;
+    font-size: 2rem;
+    color: darkblue;
 }
 
 #game-over-text {
