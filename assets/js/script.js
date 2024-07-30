@@ -37,6 +37,7 @@ function playButton() {
     document.getElementById("welcome-container").classList.add("hide-content");
     const buttonContainer = document.getElementById("btn-container");
     buttonContainer.remove();
+    document.getElementById("header").classList.add("hide-content");
     startGame();
 }
 
@@ -50,6 +51,7 @@ function startGame() {
     cardEventListeners();
     computerTurn();
     showScore();
+    highScore();
 }
 
 // Clears the player's array in preparation for another guess. Selects a random card and pushes it to computer's array

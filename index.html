@@ -16,8 +16,8 @@
     <title>Memory Game</title>
 </head>
 <body>
-    <header>
-        <nav id="navbar">
+    <header id="header">
+        <nav id="navbar" class="">
             <span id="title-span"><h1 class="title-border">MEMORY GAME</h1></span>
             <span id="how-to-play-span"><button id="how-to-play-button" class="hvr-bounce-to-top" onclick="modalOpen()"><h2 >HOW TO PLAY</h2></button></span>
         </nav>
@@ -38,16 +38,16 @@
         </div>
     </div>
 
-    <div id="welcome-container" class="hide-content">
+    <div id="welcome-container" class="">
         <h2>Welcome to my memory game!</h2>
         <p>I created this simple sequence memory game for Milestone Project 2 of CodeInstitute's Web Application Design course.</p>
         <p>There is no end goal, just get your sequence score as high as you can!</p>
         <p>Press the button below to begin</p>
     </div>
 
-    <!-- <div class="container" id="btn-container">
+    <div class="container" id="btn-container">
         <button id="play-btn" class="" onclick="playButton()"><h2>PLAY</h2><button>
-    </div> -->
+    </div>
 
     <!-- Remember to put class = "hide-content" inside this game-area div -->
     <div id="game-area" class="hide-content">
@@ -78,7 +78,7 @@
     </div>
 
     <!-- remember to add hide-content class to game over screen div for the finished game -->
-    <div id="game-over-screen" class="">
+    <div id="game-over-screen" class="hide-content">
         <div class="game-over-container">
             <h2 id="game-over-text">GAME OVER</h2>
             <h3>Your score was <span id="final-score">0</span></h3>

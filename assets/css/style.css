@@ -96,7 +96,7 @@ body {
 
 @media screen and (min-width: 700px) {
     #how-to-play-button {
-        height: 100px;
+        height: 60px;
     }
 
     #how-to-play-button h2 {
@@ -112,7 +112,7 @@ body {
 
 @media screen and (min-width: 1400px) {
     #how-to-play-button {
-        height: 100px;
+        height: 60px;
     }
 
     #how-to-play-button h2 {
@@ -216,6 +216,7 @@ body {
     height: 200px;
     width: 425px;
     margin: 0 auto;
+    margin-top: 10px;
 }
 
 #welcome-container p, h2 {
@@ -239,19 +240,19 @@ body {
 
 @media screen and (min-width: 1400px) {
     #welcome-container {
-        height: 400px;
+        height: 300px;
         width: 600px
     }
 
     #welcome-container h2 {
         font-size: 2.7rem;
-        padding-top: 15px;
-        padding-bottom: 30px;
+        padding-top: 10px;
+        padding-bottom: 25px;
     }
 
     #welcome-container p {
         font-size: 1.5rem;
-        line-height: 3rem;
+        line-height: 2.5rem;
     }
 }
 
@@ -262,11 +263,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 25vh;
+    margin-top: 20vh;
 }
 
 #play-btn {
-    height: 100px;
+    height: 75px;
     padding: 10px;
     cursor: pointer;
     border: 2px aquamarine solid;
@@ -286,7 +287,7 @@ body {
 
 @media screen and (min-width: 700px) {
     #play-btn  {
-        height: 120px;
+        height: 100px;
         width: 175px;
     }
 
@@ -298,8 +299,8 @@ body {
 
 @media screen and (min-width: 950px) {
     #play-btn {
-        height: 135px;
-        width: 200px;
+        height: 100px;
+        width: 175px;
     }
 
     #play-btn h2 {
@@ -334,7 +335,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px auto;
+    margin: 10px auto;
 }
 
 .choice-cards h2 {
@@ -383,8 +384,8 @@ body {
 
 @media screen and (min-width: 700px) {
     .choice-cards {
-        padding-top: 30px;
-        padding-bottom: 30px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 
     .single-digit {
