@@ -93,6 +93,7 @@ body {
 @media screen and (min-width: 700px) {
     #how-to-play-button {
         height: 60px;
+        line-height: 60px;
         font-size: 3rem;
     }
 }
@@ -106,6 +107,7 @@ body {
 @media screen and (min-width: 1400px) {
     #how-to-play-button {
         height: 60px;
+        line-height: 60px;
         font-size: 3.5rem;
     }
 }
@@ -202,7 +204,7 @@ body {
     opacity: 0.5;
     border: 2px aquamarine solid;
     position: relative;
-    top: 100px;
+    top: 50px;
     height: 200px;
     width: 425px;
     margin: 0 auto;
@@ -253,7 +255,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20vh;
+    margin-top: 15vh;
 }
 
 #play-btn {
@@ -351,10 +353,29 @@ body {
 /* Game Area media queries
 ----------------------------------------------------------------------------- */
 
+@media screen and (min-width: 350px) {
+    .choice-cards {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .upper-row {
+        margin-top: 100px;
+    }
+}
+
 @media screen and (min-width: 700px) {
     .choice-cards {
         padding-top: 20px;
         padding-bottom: 20px;
+    }
+
+    .upper-row {
+        margin-top: 200px;
+    }
+
+    .bottom-row {
+        margin-bottom: 100px;
     }
 
     .single-digit {
@@ -377,6 +398,14 @@ body {
 @media screen and (min-width: 950px) {
     .choice-cards {
         width: 60%;
+    }
+
+    .upper-row {
+        margin-top: 10px;
+    }
+
+    .bottom-row {
+        margin-bottom: 15px;
     }
 }
 
