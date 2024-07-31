@@ -102,10 +102,11 @@ The Github icon in my footer was from [Font Awesome]()
 | Footer | Shows name of creator and link to Github profile | ![screenshot of footer](/readme%20documentations/screenshots/features%20screenshots/footer.png) |
 
 
-
 ### Future Features
 
+In the future I'd like to change the gameplay so that the player fails if they make a wrong input there and then, as opposed to having to input the whole sequence first. This is because of a lack of knowledge from me. 
 
+Potential future ideas could include a leaderboard or a timer.
 
 ## Testing 
 
@@ -117,6 +118,13 @@ The site was deployed on Github pages.
 
 The steps of deployment are as follows:
 
+* Go to the Github repository for the site [here](https://github.com/seanbrindley17/milestone-project-2).
+* Navigate to Settings.
+* Navigate to Pages.
+* From the Source dropdown, select Deploy from a branch.
+* From the Branch dropdown, select main and then click on the Save button.
+* A box at the top of the page will say Your site is live as shown here:
+![screenshot of deployment](/readme%20documentations/screenshots/deployment%20screenshots/deployment%20box.png)
 
 ### Local Deployment 
 
@@ -126,10 +134,20 @@ To create a local copy of the site, you can clone of fork this repository.
 
 To clone the repository:
 
+* Go to the Github repository for the site [here](https://github.com/seanbrindley17/milestone-project-1).
+* Click on the green Code button above the files. ![screenshot of code button](/readme%20documentations/screenshots/deployment%20screenshots/github%20code%20button.jpg)
+* Select which remote repository URL you'd like to use from HTTPS, SSH or Github CLI, then click the copy url button.
+* Open the Terminal in your code editor and change the current working directory to the location you want the cloned repository to go.
+* In the Terminal, type git clone followed by the link you copied earlier from the repository.
+* Press enter.
+
 #### Forking
 
 To fork this repository:
 
+* Log into your Github account and go to the Github repository for the site [here](https://github.com/seanbrindley17/seanb.dev).
+* Locate the Fork button near the top of the page and click it. ![screenshot of fork button](/readme%20documentations/screenshots/deployment%20screenshots/mp2%20fork%20button.png)
+* On the next page, you can change the name to distinguish it from the original. Once done, click Create Fork to create a copy of the repository to your Github account. 
 
 ## Credits
 
