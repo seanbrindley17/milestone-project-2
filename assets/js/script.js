@@ -137,7 +137,7 @@ function showScore() {
 */
 function highScore() {
     if (localStorage) {
-        let highScore = localStorage.getItem('highScore');
+        let highScore = localStorage.getItem("highScore");
         if (highScore === null) {
             highScore = 0;
             localStorage.setItem("highScore", highScore);
@@ -147,7 +147,7 @@ function highScore() {
         
         const currentScore = game.score;
         if (currentScore > highScore) {
-            localStorage.setItem('highScore', currentScore);
+            localStorage.setItem("highScore", currentScore);
             highScore = currentScore;
         }
         document.getElementById("hi-score-number").innerText = highScore;
