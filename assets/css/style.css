@@ -126,7 +126,7 @@ body {
     left: 0;
     right: 0;
     margin: auto;
-    height: 375px;
+    height: 355px;
     width: 300px;
     border: 2px solid aquamarine;
 }
@@ -167,7 +167,7 @@ body {
 
 @media screen and (min-width: 1300px) {
     .modal {
-        height: 500px;
+        height: 480px;
         width: 400px;
     }
 
