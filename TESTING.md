@@ -37,18 +37,18 @@ I used the [JSHint validator](https://jshint.com/) to validate my Javascript cod
 | script.js | ![screenshot of setTimeout within playerClick with a paraamter](/readme%20documentations/screenshots/js%20validator%20screenshots/settimeout%20with%20no%20parameters%20fixed.png) | Fixed by firstly adding a 200ms parameter, then removed entirely due to not needing it. |
 | script.js | ![screenshot of confusing warning in cardEventListeners](/readme%20documentations/screenshots/js%20validator%20screenshots/cardEventListeners%20warning%20.png) | Warning for some syntax that I really don't understand. The code still works. |
 | script.js | ![screenshot of undefined variable](/readme%20documentations/screenshots/js%20validator%20screenshots/undefined%20variable%20jquery.png) | One undefined variable, which is the JQuery selector that was used for one function. |
-| script.js | ![screenshot of supposed unused variables](/readme%20documentations/screenshots/js%20validator%20screenshots/unused%20variables.png) | Supposedly unused variables even though they are used and all are important and working. | 
+| script.js | ![screenshot of supposed unused variables](/readme%20documentations/screenshots/js%20validator%20screenshots/unused%20variables.png) | These are variables used within my HTML code. | 
 
 ## Browser Compatibility
 
 I tested my site with these browsers to check for any compatibility issues.
 
-| Browser | Home Page | Modal | Game Page | Game Over Page | Notes |
+| Browser | Home Page | Modal | Game Area | Game Over Page | Notes |
 | :---: | :---: | :---: | :---: | :---: | :---: |
-| Chrome |
-| Edge |
-| Firefox |
-| Opera |
+| Chrome | ![screenshot of home page on chrome](/readme%20documentations/screenshots/browser%20compatibility%20screenshots/chrome/chrome%20home%20page.png) | ![screenshot of modal on chrome](/readme%20documentations/screenshots/browser%20compatibility%20screenshots/chrome/chrome%20modal.png) | ![screenshot of game area on chrome](/readme%20documentations/screenshots/browser%20compatibility%20screenshots/chrome/chrome%20game%20page.png) | ![screenshot of game over page on chrome](/readme%20documentations/screenshots/browser%20compatibility%20screenshots/chrome/chrome%20gameover.png) | All work as intended. |
+| Edge | ![screenshot of home page on edge](/readme%20documentations/screenshots/browser%20compatibility%20screenshots/edge/edge%20home%20page.png) | ![screenshot of modal on edge](/readme%20documentations/screenshots/browser%20compatibility%20screenshots/edge/edge%20modal.png) | ![screenshot of game area on edge](/readme%20documentations/screenshots/browser%20compatibility%20screenshots/edge/edge%20game%20area.png) | ![screenshot of game over screen on edge](/readme%20documentations/screenshots/browser%20compatibility%20screenshots/edge/edge%20gameover.png) | Modal close box slightly overlaps footer |
+| Firefox | ![screenshot of home page on firefox](/readme%20documentations/screenshots/browser%20compatibility%20screenshots/firefox/firefox%20home%20page.png) | ![screenshot of modal on firefox](/readme%20documentations/screenshots/browser%20compatibility%20screenshots/firefox/firefox%20modal.png) | ![screenshot of gane area on firefox](/readme%20documentations/screenshots/browser%20compatibility%20screenshots/firefox/firefox%20game%20area.png) | ![screenshot of game over on firefox](/readme%20documentations/screenshots/browser%20compatibility%20screenshots/firefox/firefox%20game%20over.png) | All work as intended. |
+| Opera | ![screenshot of home page on opera](/readme%20documentations/screenshots/browser%20compatibility%20screenshots/opera/opera%20home%20page.png) | ![screenshot of modal on opera](/readme%20documentations/screenshots/browser%20compatibility%20screenshots/opera/opera%20modal.png) | ![screemshot of game area on opera](/readme%20documentations/screenshots/browser%20compatibility%20screenshots/opera/opera%20game%20area.png) | ![screenshot of game over on opera](/readme%20documentations/screenshots/browser%20compatibility%20screenshots/opera/opera%20game%20over.png) | All work as intended. |
 
 ## Responsiveness 
 
@@ -86,7 +86,7 @@ I used the web accessibility evaluation tool [WAVE](https://wave.webaim.org/) to
 
 ## Bugs/Issues
 
-My biggest issue was during the resizing. When trying to adjust media queries for the larger screen sizes, I found that I couldn't get it to display well on both my laptop screen and my large screen despite the screen resolution being exactly the same. I chose to focus on my laptop for the large screen size as more people would be using a laptop than a large screen but to this point I have no idea what to do about this issue. 
+My biggest issue was respoinsiveness during the resizing of the largest screen size. When trying to adjust media queries for the larger screen sizes, I found that I couldn't get it to display well on both my laptop screen and my large screen despite the screen resolution being exactly the same. I chose to focus on my laptop for the large screen size as more people would be using a laptop than a large screen but to this point I have no idea what to do about this issue. 
 
 ![screenshot of game area as displayed on my laptop](/readme%20documentations/screenshots/bugs%20and%20issues%20screenshots/laptop%20game%20area%20display.png)
 
