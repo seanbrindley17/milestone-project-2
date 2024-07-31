@@ -48,7 +48,7 @@ I wanted to have a pleasant to look at yet not oppressive or complicated backgro
 
 ![background image](/assets/images/background-images/pexels-pixelcop-2680270.jpg)
 
-My text was mainly dark blue, with some flavour text being in black. This was to stick to the simple blue theme. Additionally I used an aquamarine border around my heading, numbers and pop up boxes, I thought this looked nice. 
+My text was mainly `dark-blue`, with some flavour text being in the default black. This was to stick to the simple blue theme. Additionally I used an `aquamarine` border around my heading, numbers and pop up boxes, I thought this looked nice. 
 
 The pop up boxes were an opaque background, this meant that the blue still dominated yet the text inside was legible.
 
@@ -94,6 +94,14 @@ The Github icon in my footer was from [Font Awesome]()
 
 | Feature | Description | Screenshot |
 | :---: | :---: | :---: |
+| How To Play Button & Modal | The how to play button is a modal that pops up upon clicking to tell the user how to play | ![screenshot of how to play modal](/readme%20documentations/screenshots/features%20screenshots/how%20to%20play%20modal.png) |
+| Play Button | Pressing the play button hides the title, how to play and welcome box and brings up the game area | ![screenshot of play button](/readme%20documentations/screenshots/features%20screenshots/play%20button.png) |
+| Game Area | Displays the numbers and is the area in which the game takes place | ![screenshot of game area](/readme%20documentations/screenshots/features%20screenshots/game%20area.png) |
+| Score Area | Displays current game score and the player's highscore using local storage | ![screenshot of score area](/readme%20documentations/screenshots/features%20screenshots/score%20area.png) |
+| Game Over Screen | When the player fails to guess the sequence correctly, shows their final score and gives them the opportunity to try again | ![screenshot of game over screen](/readme%20documentations/screenshots/features%20screenshots/game%20over%20screen.png) |
+| Footer | Shows name of creator and link to Github profile | ![screenshot of footer](/readme%20documentations/screenshots/features%20screenshots/footer.png) |
+
+
 
 ### Future Features
 
