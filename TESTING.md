@@ -78,6 +78,11 @@ I used the web accessibility evaluation tool [WAVE](https://wave.webaim.org/) to
 
 | User Story | Screenshot |
 | :---: | :---: |
+| As a new site user, I would like to be able to quickly and easily understand what the game is. | ![screenshot of welcome box](/readme%20documentations/screenshots/user%20story%20testing/welcome%20box.png) |
+| As a new site user, I would like to be able to easily find instructions on how to play and that they are clear. | ![screenshot of how to play modal](/readme%20documentations/screenshots/browser%20compatibility%20screenshots/chrome/chrome%20modal.png) |
+| As a new site user, I would like to see the score during my games and that my high score stays where I can see it. | ![screenshot of score area](/readme%20documentations/screenshots/features%20screenshots/score%20area.png) |
+| As a returning site user, I would like that my high score is saved in the memory so that I can try and beat it another time. | ![screenshot of high score](/readme%20documentations/screenshots/user%20story%20testing/high%20score.png) |
+
 
 ## Defensive Programming 
 
