@@ -24,7 +24,7 @@ My design was created as a series of wireframes for mobile, tablet and desktop. 
 
 ### New Site Users
 
-* As a new site user, I would like to be able to quickly and easily understand what the game.
+* As a new site user, I would like to be able to quickly and easily understand what the game is.
 
 * As a new site user, I would like to be able to easily find instructions on how to play and that they are clear.
 
