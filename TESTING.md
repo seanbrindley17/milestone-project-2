@@ -66,7 +66,8 @@ I used the web accessibility evaluation tool [WAVE](https://wave.webaim.org/) to
 
 | Page | Summary | Details | Contrast | Notes |
 | :---: | :---: | :---: | :---: | :---: |
-| Main | ![screenshot of wave summary](/readme%20documentations/screenshots/wave%20accessibility/wave%20summary.png) | ![screenshot of wave details](/readme%20documentations/screenshots/wave%20accessibility/initial%20report.png) | ![screenshot of wave contrast fail](/readme%20documentations/screenshots/wave%20accessibility/wave%20contrast%20fail.png) | Contrast fail on the footer despite it being very easily readable. Potentially caused by the github icon.  
+| Main | ![screenshot of wave summary](/readme%20documentations/screenshots/wave%20accessibility/wave%20summary.png) | ![screenshot of wave details](/readme%20documentations/screenshots/wave%20accessibility/initial%20report.png) | ![screenshot of wave contrast fail](/readme%20documentations/screenshots/wave%20accessibility/wave%20contrast%20fail.png) | Contrast fail on the footer despite it being very easily readable. Potentially caused by the github icon. One alert for having no h1 element and 12 alerts for the game buttons for click events which is to be expected. |
+| Main | ![screenshot of wave summary](/readme%20documentations/screenshots/wave%20accessibility/wave%20summary%20v2.png) | ![screenshot of wave details](/readme%20documentations/screenshots/wave%20accessibility/wave%20details%20v2.png) | ![screenshot of wave contrast](/readme%20documentations/screenshots/wave%20accessibility/wave%20contrast%20pass.png) |  Added h1 element to page title. Added darker background for footer to pass contrast test. |
 
 ## Lighthouse Audit
 
