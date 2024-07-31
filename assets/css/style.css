@@ -348,24 +348,12 @@ body {
         padding-top: 15px;
         padding-bottom: 15px;
     }
-
-    .upper-row {
-        margin-top: 100px;
-    }
 }
 
 @media screen and (min-width: 700px) {
     .choice-cards {
         padding-top: 20px;
         padding-bottom: 20px;
-    }
-
-    .upper-row {
-        margin-top: 200px;
-    }
-
-    .bottom-row {
-        margin-bottom: 100px;
     }
 
     .single-digit {
@@ -395,7 +383,7 @@ body {
     }
 
     .bottom-row {
-        margin-bottom: 15px;
+        margin-bottom: 7px;
     }
 }
 
@@ -417,6 +405,7 @@ body {
     width: 80%;
     margin: 0 auto;
     border: 1px solid aquamarine;
+    margin-bottom: 10px;
 }
 
 #score {
@@ -440,6 +429,7 @@ body {
 @media screen and (min-width: 1300px) {
     #score-area {
         width: 55%;
+        
     }
 }
 
