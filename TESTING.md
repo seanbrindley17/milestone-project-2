@@ -66,13 +66,13 @@ I used the web accessibility evaluation tool [WAVE](https://wave.webaim.org/) to
 
 | Page | Summary | Details | Contrast | Notes |
 | :---: | :---: | :---: | :---: | :---: |
-| index.html | ![screenshot of wave summary](/readme%20documentations/screenshots/wave%20accessibility/wave%20summary.png) | ![screenshot of wave details](/readme%20documentations/screenshots/wave%20accessibility/initial%20report.png) | ![screenshot of wave contrast fail](/readme%20documentations/screenshots/wave%20accessibility/wave%20contrast%20fail.png) | Contrast fail on the footer despite it being very easily readable. Potentially caused by the github icon.  
+| Main | ![screenshot of wave summary](/readme%20documentations/screenshots/wave%20accessibility/wave%20summary.png) | ![screenshot of wave details](/readme%20documentations/screenshots/wave%20accessibility/initial%20report.png) | ![screenshot of wave contrast fail](/readme%20documentations/screenshots/wave%20accessibility/wave%20contrast%20fail.png) | Contrast fail on the footer despite it being very easily readable. Potentially caused by the github icon.  
 
 ## Lighthouse Audit
 
 | Page | Desktop | Mobile | Notes |
 | :---: | :---: | :---: | :---: |
-| Main |
+| Main | ![screenshot of desktop lighthouse audit](/readme%20documentations/screenshots/lighthouse/desktop%20lighthouse.png) | ![screenshot of mobile lighthouse audit](/readme%20documentations/screenshots/lighthouse/mobile%20lighthouse.png) | Good result all around. |
 
 ## User Story Testing 
 
