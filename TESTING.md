@@ -56,9 +56,9 @@ I tested my site on multple devices using either my own devices or chrome dev to
 
 | Device | Home Page | Modal | Game Page | Game Over Page | Notes |
 | :---: | :---: | :---: | :---: | :---: | :---: |
-| Acer Aspire Laptop |
-| Samsung Galaxy S10 Lite |
-| Tablet (Devtools - iPad Mini) |
+| Acer Aspire Laptop | ![screenshot of home page on chrome](/readme%20documentations/screenshots/browser%20compatibility%20screenshots/chrome/chrome%20home%20page.png) | ![screenshot of modal on chrome](/readme%20documentations/screenshots/browser%20compatibility%20screenshots/chrome/chrome%20modal.png) | ![screenshot of game area on chrome](/readme%20documentations/screenshots/browser%20compatibility%20screenshots/chrome/chrome%20game%20page.png) | ![screenshot of game over page on chrome](/readme%20documentations/screenshots/browser%20compatibility%20screenshots/chrome/chrome%20gameover.png) | Tested on Chrome. |
+| Samsung Galaxy S10 Lite | ![screenshot of home page on galaxy s10](/readme%20documentations/screenshots/responsiveness%20screenshots/galaxy%20home%20page%20kiwi.jpg) | ![screenshot of modal on galaxy s10](/readme%20documentations/screenshots/responsiveness%20screenshots/galaxy%20modal%20kiwi.jpg) | ![screenshot of game area on galaxy s10](/readme%20documentations/screenshots/responsiveness%20screenshots/galaxy%20game%20area%20kiwi.jpg) | ![screenshot of game over on galaxy s10](/readme%20documentations/screenshots/responsiveness%20screenshots/galaxy%20game%20over%20kiwi.jpg) | Tested on Kiwi browser. |
+| Tablet (Devtools - iPad Mini) | ![screenshot of home page on ipad mini](/readme%20documentations/screenshots/responsiveness%20screenshots/devtools%20ipad%20mini/ipad%20mini%20home%20page.png) | ![screenshot of modal on ipad mini](/readme%20documentations/screenshots/responsiveness%20screenshots/devtools%20ipad%20mini/ipad%20mini%20modal.png) | ![screenshot of game area on ipad mini](/readme%20documentations/screenshots/responsiveness%20screenshots/devtools%20ipad%20mini/ipad%20mini%20game%20area.png) | ![screenshot of game over page on ipad mini](/readme%20documentations/screenshots/responsiveness%20screenshots/devtools%20ipad%20mini/ipad%20mini%20game%20over.png) | Simulated using Chrome Devtools. |
 
 ## Accessibility 
 
