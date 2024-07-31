@@ -89,6 +89,11 @@ I used the web accessibility evaluation tool [WAVE](https://wave.webaim.org/) to
 
 | Page | Expectation | Test | Result | Fix | Screenshot |
 | :---: | :---: | :---: | :---: | :---: | :---: |
+| Main | The how to play modal is expected to appear when the how to play button is clicked. | Tested the feature by clicking on the how to play button | The feature behaved as expected | Test passed | ![screenshot of modal](/readme%20documentations/screenshots/features%20screenshots/how%20to%20play%20modal.png) |
+| Main/Game Area | The game is expected to appear and the other elements of the welcome page are expected to disappear when the play button is clicked. | Tested the feature by clicking the play button. | The feature behaved as expected | Test passed | ![screenshot of game area](/readme%20documentations/screenshots/browser%20compatibility%20screenshots/chrome/chrome%20game%20page.png) |
+| Game Over | The game over page is expected to appear if the player gets the sequence wrong | Tested the feature by purposefully doing a wrong sequence | The feature behaved as expected | Test passed | ![screenshot of game over](/readme%20documentations/screenshots/browser%20compatibility%20screenshots/chrome/chrome%20gameover.png) |
+| Game Over | The game area is expected to appear when the user clicks the try again button | Tested the feature by clicking the try again button | The feature works as expected | Test passed | ![screenshot of game area](/readme%20documentations/screenshots/browser%20compatibility%20screenshots/chrome/chrome%20game%20page.png) |
+| All pages | The Github icon in the footer is expected to open my Github profile in another tab | Tested the feature by clicking the Github icon on each instance of my site i.e. main page, game area and game over | The feature works as expected | Test passed |  ![screenshot of my github profile](/readme%20documentations/screenshots/defensive%20testing/github%20profile.png) |
 
 ## Bugs/Issues
 
