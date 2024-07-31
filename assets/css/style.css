@@ -534,6 +534,11 @@ body {
     color: white;
 }
 
+#footer i {
+    color: black;
+    font-size: 1.3rem;
+}
+
 /* Hover.css external code
 ----------------------------------------------------------------------------- */
 
