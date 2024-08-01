@@ -87,7 +87,7 @@ function playSequence() {
 
 /* Listens for the player's click and pushes the card's ID to the player's array.
 *  Checks that the computer's and player's arrays are the same length and calls compareChoice function
-*/ 
+*/
 function cardEventListeners() {
     const cards = document.getElementsByClassName("card");
     for (let card of cards) {
@@ -95,7 +95,7 @@ function cardEventListeners() {
             if (!game.turnInProgress && game.computerCardSelection.length > 0) {
                 let playerChoice = event.currentTarget;
                 game.playerFlip.push(playerChoice.id);
-                
+
                 if (game.playerFlip.length === game.computerCardSelection.length) {
                     compareChoice();
                 }
@@ -144,7 +144,7 @@ function highScore() {
         } else {
             highScore = parseInt(highScore, 10);
         }
-        
+
         const currentScore = game.score;
         if (currentScore > highScore) {
             localStorage.setItem("highScore", currentScore);
@@ -155,7 +155,7 @@ function highScore() {
 }
 
 // Hides the game area, shows the game over screen with the player's score displayed and the option to try again
-function gameOver () {
+function gameOver() {
     document.getElementById("game-area").classList.add("hide-content");
     document.getElementById("game-over-screen").classList.remove("hide-content");
     document.getElementById("final-score").innerText = game.score;
@@ -165,7 +165,7 @@ function gameOver () {
 * Functions almost exactly like startGame just without adding event listeners upon clicking as they 
 * will already be there.
 */
-function tryAgain () {
+function tryAgain() {
     document.getElementById("game-over-screen").classList.add("hide-content");
     document.getElementById("game-area").classList.remove("hide-content");
     game.score = 0;
