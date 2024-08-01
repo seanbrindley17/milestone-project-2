@@ -58,7 +58,7 @@ I decided to use "[Roboto](https://fonts.google.com/specimen/Roboto)" for my fla
 
 I decided to use "[Anton](https://fonts.google.com/specimen/Anton)" for heading text and the game numbers as this looked better with a border around it.
 
-The Github icon in my footer was from [Font Awesome]()
+The Github icon in my footer was from [Font Awesome](https://fontawesome.com/).
 
 ### Technology Used 
 
