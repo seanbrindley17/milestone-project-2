@@ -1,6 +1,6 @@
-# (Milestone Project 2)
+# Milestone Project 2
 
-* Simple memory game
+https://seanbrindley17.github.io/milestone-project-2/
 
 ---
 
@@ -8,13 +8,13 @@
 
 I used the [Am I Responsive]() website to create a mockup of how the site could look on multiple different display sizes.
 
-![screenshot of mockups from am i responsive]()
+![screenshot of mockups from am i responsive](/readme%20documentations/screenshots/am%20i%20responsive/am%20i%20responsive%20mockup.png)
 
 ## UX 
 
 ### Project Goal
 
-The goal of this project was to create a simple, single page browser game using HTML, CSS and Javascript. I chose to do a game because I wanted to understand how to use loops and if statements correctly, among other things, and the best way to learn is by doing. This project satisfies the one page requirement and the use of Javascript for interactive elements.
+The goal of this project was to create a simple, single page browser game using HTML, CSS and Javascript. I chose to do a game because I wanted to understand how to use loops and if statements correctly, among other things, and the best way to learn is by doing. For me, it was more about understanding the Javascript elements than trying to make a work of art, this project uses very basic CSS and looks very simple but that is by design. This project satisfies the one page requirement and the use of Javascript for interactive elements.
 
 The game itself is a sequence-based memory game. To start, the computer lights up one card, the player then chooses the card highlighted. The computer then adds one card to it's sequence and the player must remember the longer sequence and click the correct cards in order and so on.
 
@@ -173,6 +173,6 @@ To fork this repository:
 
 #### Hover.css
 
-I utilised code from [hover.css](https://ianlunn.github.io/Hover/) by Ian Lunn to put effects on my how to play, play and try again buttons. These credits will be documented here.
+I utilised code from [hover.css](https://ianlunn.github.io/Hover/) by Ian Lunn to put effects on my how to play button. These credits will be documented here.
 
 * For the How To Play button, I used [.hvr-bounce-to-top](https://github.com/IanLunn/Hover/blob/master/css/hover.css#L1540)
