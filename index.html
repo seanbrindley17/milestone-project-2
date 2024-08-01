@@ -15,22 +15,27 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Memory Game</title>
 </head>
+
 <body>
     <header id="header">
         <nav id="navbar" class="">
             <h1><span id="title-span" class="title-border">MEMORY GAME</span></h1>
-            <span id="how-to-play-span"><button id="how-to-play-button" class="hvr-bounce-to-top" onclick="modalOpen()">HOW TO PLAY</button></span>
+            <span id="how-to-play-span"><button id="how-to-play-button" class="hvr-bounce-to-top"
+                    onclick="modalOpen()">HOW TO PLAY</button></span>
         </nav>
     </header>
 
     <div id="how-to-play-modal" class="modal">
         <div class="model-content">
             <div id="modal-header">
-                <!-- <span class="close" onclick="modalCloseX()">&times;</span> -->
                 <h2>HOW TO PLAY</h2>
             </div>
             <div id="modal-body">
-                <p>Upon pressing play, a board of 12 cards will appear and one card will light up. <br>You must select that card in order to gain a point. <br>The computer will then add a card to it's sequence and light them both up in the order you have to select them. <br>The number of points you have corresponds to the length of the sequence. <br>You must guess the entire sequence before the game will tell you if you're right or wrong.</p>
+                <p>Upon pressing play, a board of 12 cards will appear and one card will light up. <br>You must select
+                    that card in order to gain a point. <br>The computer will then add a card to it's sequence and light
+                    them both up in the order you have to select them. <br>The number of points you have corresponds to
+                    the length of the sequence. <br>You must guess the entire sequence before the game will tell you if
+                    you're right or wrong.</p>
             </div>
             <div id="close-btn-container">
                 <button class="close-btn" onclick="modalCloseX()">CLOSE</button>
@@ -40,7 +45,8 @@
 
     <div id="welcome-container" class="">
         <h2>Welcome to my memory game!</h2>
-        <p>I created this simple sequence memory game for Milestone Project 2 of CodeInstitute's Web Application Design course.</p>
+        <p>I created this simple sequence memory game for Milestone Project 2 of CodeInstitute's Web Application Design
+            course.</p>
         <p>There is no end goal, just get your sequence score as high as you can!</p>
         <p>Press the button below to begin</p>
     </div>
@@ -51,24 +57,48 @@
 
     <!-- Remember to put class = "hide-content" inside this game-area div -->
     <div id="game-area" class="hide-content">
-        
+
         <div class="choice-cards upper-row">
-            <div class="card card1" id="button1" onclick="playerClick(this)"><h2 class="single-digit">1</h2></div>
-            <div class="card card2" id="button2" onclick="playerClick(this)"><h2 class="single-digit">2</h2></div>
-            <div class="card card3" id="button3" onclick="playerClick(this)"><h2 class="single-digit">3</h2></div>
-            <div class="card card4" id="button4" onclick="playerClick(this)"><h2 class="single-digit">4</h2></div>
+            <div class="card card1" id="button1" onclick="playerClick(this)">
+                <h2 class="single-digit">1</h2>
+            </div>
+            <div class="card card2" id="button2" onclick="playerClick(this)">
+                <h2 class="single-digit">2</h2>
+            </div>
+            <div class="card card3" id="button3" onclick="playerClick(this)">
+                <h2 class="single-digit">3</h2>
+            </div>
+            <div class="card card4" id="button4" onclick="playerClick(this)">
+                <h2 class="single-digit">4</h2>
+            </div>
         </div>
         <div class="choice-cards middle-row">
-            <div class="card card5" id="button5" onclick="playerClick(this)"><h2 class="single-digit">5</h2></div>
-            <div class="card card6" id="button6" onclick="playerClick(this)"><h2 class="single-digit">6</h2></div>
-            <div class="card card7" id="button7" onclick="playerClick(this)"><h2 class="single-digit">7</h2></div>
-            <div class="card card8" id="button8" onclick="playerClick(this)"><h2 class="single-digit">8</h2></div>
+            <div class="card card5" id="button5" onclick="playerClick(this)">
+                <h2 class="single-digit">5</h2>
+            </div>
+            <div class="card card6" id="button6" onclick="playerClick(this)">
+                <h2 class="single-digit">6</h2>
+            </div>
+            <div class="card card7" id="button7" onclick="playerClick(this)">
+                <h2 class="single-digit">7</h2>
+            </div>
+            <div class="card card8" id="button8" onclick="playerClick(this)">
+                <h2 class="single-digit">8</h2>
+            </div>
         </div>
         <div class="choice-cards bottom-row">
-            <div class="card card9" id="button9" onclick="playerClick(this)"><h2 class="single-digit">9</h2></div>
-            <div class="card card10" id="button10" onclick="playerClick(this)"><h2 class="double-digit">10</h2></div>
-            <div class="card card11" id="button11" onclick="playerClick(this)"><h2 class="double-digit">11</h2></div>
-            <div class="card card12" id="button12" onclick="playerClick(this)"><h2 class="double-digit">12</h2></div>
+            <div class="card card9" id="button9" onclick="playerClick(this)">
+                <h2 class="single-digit">9</h2>
+            </div>
+            <div class="card card10" id="button10" onclick="playerClick(this)">
+                <h2 class="double-digit">10</h2>
+            </div>
+            <div class="card card11" id="button11" onclick="playerClick(this)">
+                <h2 class="double-digit">11</h2>
+            </div>
+            <div class="card card12" id="button12" onclick="playerClick(this)">
+                <h2 class="double-digit">12</h2>
+            </div>
         </div>
 
         <div id="score-area">
@@ -89,11 +119,13 @@
     <footer id="footer">
         <div>
             <p>Created by Sean Brindley for Milestone Project 2. <a href="https://github.com/seanbrindley17"
-                aria-label="Go to my Github page (opens in a new tab)" target="_blank"><i class="fa-brands fa-github"></i></a></p>
+                    aria-label="Go to my Github page (opens in a new tab)" target="_blank"><i
+                        class="fa-brands fa-github"></i></a></p>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="./assets/js/script.js"></script>
 </body>
+
 </html>
